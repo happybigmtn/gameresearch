@@ -108,36 +108,92 @@ Two concrete fixes, recorded in the program.md for future work:
 
 ---
 
-## 3. The progression so far
+## 3. The SolverBot — arithmetic is the whole game
+
+The natural fix is the one the game's structure points at: compute
+valid triples at round start, buzz only if at least one exists,
+declare the first (lex-smallest) match when prompted. Since the
+plugin exposes both `evaluate(cells, triple)` and a new
+`current_round_layout(state)` helper, this reduces to a triple
+for-loop inside the bot:
+
+```rust
+fn has_valid_triple(cells, target) -> bool {
+    for a in 0..8 { for b in (a+1)..9 { for c in (b+1)..10 {
+        if evaluate(cells, [a, b, c]) == Some(target) { return true; }
+    }}}
+    false
+}
+```
+
+The SolverBot never buzzes without a solution and never declares a
+wrong answer. Against a random opponent, the game-theoretic
+expectation is that whichever side buzzes first wins the round, and
+the solver buzzes first every round (because it has a solution
+every round — the plugin generates rounds that always have at
+least one). The expected win rate is therefore essentially 1.0,
+subject only to the harness's seat-polling order.
+
+### 3.1 The harness-vs-plugin tick-counting gotcha
+
+We added an optional `max_ticks_per_match` field to `program.md`
+so Equation Pyramid can get a higher ceiling than the default 2000.
+Set to 20000 in the program file. But even with the ceiling raised,
+the benchmark takes **many minutes to run 50 matches**. A 200-match
+benchmark ran for 18 minutes without completing.
+
+The reason is that the Equation Pyramid plugin internally uses
+several tick cycles per logical turn — there are silence cycles,
+buzz windows, and declaration subcycles baked into the timing
+model. Even when both bots decide instantly, the plugin eats tick
+budget advancing between states. Our harness counts *driver ticks*
+(the outer loop in `run_match`) rather than *plugin-logical turns*,
+which means Equation Pyramid pays a multiplier the other games
+don't.
+
+Two fixes, neither landed yet:
+
+1. **Per-game benchmark ceilings tuned to plugin timing models.**
+   Raise Equation Pyramid's to 50,000+, accept the long runtime,
+   confirm the solver hits ~1.0 win-rate.
+2. **Progress-based stall detection.** Track state hashes between
+   ticks; if the hash hasn't changed in N ticks, terminate. This
+   decouples harness termination from plugin timing model.
+
+Meanwhile, the SolverBot code is in, its logic is correct, and its
+unit tests pass. The absence of a benchmark number is itself a
+finding: the harness needs per-game termination tuning before
+certain classes of games can be evaluated.
+
+---
+
+## 4. The progression so far
 
 | Iteration | Technique | Win-rate vs random | Status |
 |-----------|-----------|-------------------|--------|
-| v1 scaffold | RandomBot (buzz + uniform-random triple) | — | Benchmark doesn't terminate; baseline rejected |
+| v1 scaffold  | RandomBot (buzz + random triple) | — | Benchmark doesn't terminate |
+| v2 (current) | SolverBot (enumerate-and-validate) | — | Code lands; benchmark needs harness tuning |
 
 What's next:
 
-1. **Arithmetic-solver bot.** At round start, iterate the 120
-   triples, evaluate each, keep those matching the target. Buzz
-   only if we have a solution in hand. Declare a specific match
-   deterministically (e.g., the triple with the smallest sum of
-   indices to break ties).
-2. **Benchmark ceiling fix.** Raise `max_ticks_per_match` for
-   Equation Pyramid, or write a game-specific match driver that
-   knows buzz-reject cycles don't count against the stall budget.
-3. **Self-play benchmark.** Once the arithmetic-solver is in, run
-   it against itself — both players will always find solutions, so
-   the winner is determined by who buzzes first. Expect 0.50
-   by-symmetry, with seat-0's structural buzz-priority pulling it
-   toward 0.55–0.60 on our harness.
+1. **State-hash based stall detection** in `benchmark.rs`. Two
+   tick-counters: one that always advances, one that resets on
+   state change. Terminate on the second hitting the ceiling.
+2. **Self-play benchmark** once termination is stable. SolverBot
+   vs. SolverBot will be 0.50 by symmetry, with seat-0 ahead by
+   the small structural buzz-priority margin.
+3. **Bet-aware opponent.** Once the solver is measurable, try a
+   *heuristic solver* that sometimes buzzes without a solution
+   when the opponent is behind — a genuinely game-theoretic
+   decision.
 
 There's also a broader lesson sneaking out of this chapter:
 **benchmark structure has to match game structure**. NMM, Bagchal,
 and Big Small are all games where a match has a natural turn-count
 upper bound. Equation Pyramid's match-length is *unbounded under
-pathological play* — exactly the play that random produces. The
-harness-side fix is to count progress rather than raw ticks; the
-bot-side fix is to play something sensible. Both are appropriate
-at different points in the iteration loop.
+pathological play*, and its per-turn *tick cost* varies by game —
+so a one-size-fits-all harness ceiling isn't enough. The fix is
+progress-based termination, not bigger integers.
 
 ---
 
