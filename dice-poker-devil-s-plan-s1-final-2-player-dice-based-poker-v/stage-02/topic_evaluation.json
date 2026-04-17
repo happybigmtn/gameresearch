@@ -1,0 +1,7 @@
+{
+  "novelty": 5,
+  "specificity": 7,
+  "feasibility": 9,
+  "overall": 6,
+  "suggestion": "The core game-solving contribution alone is incremental \u2014 small imperfect-information games have been solved many times. The differentiating angle is the independence vs. correlation structural comparison (SQ3 from the decomposition). To strengthen novelty for a top venue (AAAI/NeurIPS), reframe the contribution away from 'we solved dice poker' toward: (1) A formal characterization of how hand-generation correlation (shared deck vs. independent dice) affects equilibrium bluffing structure in betting games \u2014 this is a general game-theoretic result with dice poker as the primary case study. (2) The re-roll signaling game as a novel pre-bet information design problem \u2014 connect it to the Bayesian persuasion / information design literature (Kamenica & Gentzkow), where the re-roll decision is a sender choosing how much to reveal. (3) Propose 'independent-hand poker' as a new benchmark class for imperfect-information game solving, complementing Kuhn/Leduc poker. The feasibility is excellent (exact solutions on a laptop), but feasibility alone doesn't publish \u2014 the theoretical framing must carry the weight. If the null result risk on SQ3 materializes (independence doesn't change equilibrium structure much), pivot to characterizing *when* correlation matters and proving bounds on the bluff-frequency gap as a function of game parameters."
+}

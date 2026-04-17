@@ -1,0 +1,7 @@
+{
+  "novelty": 7,
+  "specificity": 8,
+  "feasibility": 7,
+  "overall": 7.3,
+  "suggestion": "The topic is strong as-is. To push novelty higher, emphasize the self-selected threshold game formalism as a new game class rather than framing it as an analysis of a TV show game. Lead with the theoretical contribution \u2014 sequential elimination under endogenous difficulty ordering with stochastic cognitive performance \u2014 and use Fragments of Memory as a motivating example rather than the title. This reframing broadens appeal (contest design, adaptive testing, AI agent evaluation) and avoids reviewers dismissing it as a case study. Consider adding a mechanism design result (optimal question-pool composition for a designer) to strengthen the 'so what' for the EC/AAMAS audience."
+}

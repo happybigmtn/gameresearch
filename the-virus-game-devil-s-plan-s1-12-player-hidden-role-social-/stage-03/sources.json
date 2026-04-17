@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Semantic Scholar API",
+      "type": "academic_search_engine",
+      "url": "https://api.semanticscholar.org/",
+      "status": "planned",
+      "query": "hidden role game equilibrium; Bayesian signaling asymmetric factions; CFR imperfect information; ring topology game theory",
+      "verified_at": null
+    },
+    {
+      "id": "S02",
+      "name": "Google Scholar",
+      "type": "academic_search_engine",
+      "url": "https://scholar.google.com/",
+      "status": "planned",
+      "query": "social deduction game Nash equilibrium; Mafia Werewolf formal model; multi-faction coalition incomplete information",
+      "verified_at": null
+    },
+    {
+      "id": "S03",
+      "name": "arXiv (cs.GT + cs.AI + cs.MA)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/search/?searchtype=all&query=",
+      "status": "planned",
+      "query": "counterfactual regret minimization; extensive-form game symmetry automorphism; multi-agent equilibrium computation; game abstraction exploitability",
+      "verified_at": null
+    },
+    {
+      "id": "S04",
+      "name": "AAMAS Digital Library",
+      "type": "conference_proceedings",
+      "url": "https://dl.acm.org/conference/aamas",
+      "status": "planned",
+      "query": "hidden role social deduction; multi-faction signaling game; coalition formation elimination game",
+      "verified_at": null
+    },
+    {
+      "id": "S05",
+      "name": "AAAI Digital Library",
+      "type": "conference_proceedings",
+      "url": "https://ojs.aaai.org/",
+      "status": "planned",
+      "query": "imperfect information game solving; social deduction AI; game tree abstraction",
+      "verified_at": null
+    },
+    {
+      "id": "S06",
+      "name": "NeurIPS Proceedings",
+      "type": "conference_proceedings",
+      "url": "https://proceedings.neurips.cc/",
+      "status": "planned",
+      "query": "ReBeL; game theory deep learning; equilibrium computation large games",
+      "verified_at": null
+    },
+    {
+      "id": "S07",
+      "name": "Games and Economic Behavior (Elsevier)",
+      "type": "journal",
+      "url": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
+      "status": "planned",
+      "query": "cheap talk signaling; multi-faction game equilibrium; network topology strategic interaction",
+      "verified_at": null
+    },
+    {
+      "id": "S08",
+      "name": "International Journal of Game Theory (Springer)",
+      "type": "journal",
+      "url": "https://link.springer.com/journal/182",
+      "status": "planned",
+      "query": "Bayesian persuasion multiple senders; coalition formation asymmetric information; ring game",
+      "verified_at": null
+    },
+    {
+      "id": "S09",
+      "name": "r/DevilsPlan and r/boardgames (Reddit)",
+      "type": "community_forum",
+      "url": "https://www.reddit.com/r/DevilsPlan/",
+      "status": "planned",
+      "query": "Virus Game rules explanation strategy; Devil's Plan Season 1 game mechanics",
+      "verified_at": null
+    },
+    {
+      "id": "S10",
+      "name": "Netflix \u2014 Devil's Plan S1 Episodes",
+      "type": "primary_source_media",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "planned",
+      "query": "Virus Game episode(s) \u2014 direct rule extraction and mechanic verification",
+      "verified_at": null
+    },
+    {
+      "id": "S11",
+      "name": "DBLP Computer Science Bibliography",
+      "type": "academic_index",
+      "url": "https://dblp.org/",
+      "status": "planned",
+      "query": "author disambiguation and venue verification for cited game theory papers",
+      "verified_at": null
+    },
+    {
+      "id": "S12",
+      "name": "GitHub (solver implementations)",
+      "type": "code_repository",
+      "url": "https://github.com/search",
+      "status": "planned",
+      "query": "CFR+ implementation; OpenSpiel social deduction; extensive form game solver",
+      "verified_at": null
+    }
+  ],
+  "count": 12,
+  "generated": "2026-04-17T15:04:37+00:00"
+}

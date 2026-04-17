@@ -1,0 +1,204 @@
+{
+  "sources": [
+    {
+      "id": "src-001",
+      "name": "Romera-Paredes et al. \u2014 FunSearch: Mathematical Discoveries with LLMs",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2312.17332",
+      "status": "identified",
+      "query": "\"FunSearch\" OR \"LLM-guided evolution\" AND combinatorial",
+      "verified_at": null
+    },
+    {
+      "id": "src-002",
+      "name": "Ye et al. \u2014 ReEvo: LLMs as Hyper-Heuristics with Reflective Evolution",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2402.01145",
+      "status": "identified",
+      "query": "ReEvo OR \"LLM heuristic\" AND combinatorial optimization",
+      "verified_at": null
+    },
+    {
+      "id": "src-003",
+      "name": "Gordon \u2014 A Faster Scrabble Move Generation Algorithm (Appel & Jacobson improvement)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1002/spe.4380180206",
+      "status": "identified",
+      "query": "\"GADDAG\" OR \"Scrabble\" AND \"move generation\" AND algorithm",
+      "verified_at": null
+    },
+    {
+      "id": "src-004",
+      "name": "Appel & Jacobson \u2014 The World's Fastest Scrabble Program",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1145/42411.42420",
+      "status": "identified",
+      "query": "\"Scrabble\" AND \"DAWG\" AND \"move generation\"",
+      "verified_at": null
+    },
+    {
+      "id": "src-005",
+      "name": "Bard \u2014 Hanabi is NP-Hard, Even for Cheaters who Look at Their Cards",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1603.01911",
+      "status": "identified",
+      "query": "\"Hanabi\" AND \"NP-hard\" AND cooperative",
+      "verified_at": null
+    },
+    {
+      "id": "src-006",
+      "name": "Walton-Rivers et al. \u2014 Evaluating and Modelling Hanabi-Playing Agents",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1109/CIG.2017.8080417",
+      "status": "identified",
+      "query": "\"Hanabi\" AND \"planning\" AND cooperative AND evaluation",
+      "verified_at": null
+    },
+    {
+      "id": "src-007",
+      "name": "Hu et al. \u2014 Other-Play for Zero-Shot Coordination (Hanabi)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2003.02979",
+      "status": "identified",
+      "query": "\"Hanabi\" AND \"cooperative\" AND \"zero-shot\" AND policy",
+      "verified_at": null
+    },
+    {
+      "id": "src-008",
+      "name": "Carroll et al. \u2014 On the Utility of Learning about Humans for Human-AI Coordination (Overcooked)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1910.05789",
+      "status": "identified",
+      "query": "\"Overcooked\" AND \"cooperative\" AND planning AND AI",
+      "verified_at": null
+    },
+    {
+      "id": "src-009",
+      "name": "Sheng & Tenenbaum \u2014 Scrabble is PSPACE-Complete",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2202.01889",
+      "status": "identified",
+      "query": "\"Scrabble\" AND \"PSPACE\" OR \"NP-hard\" AND complexity",
+      "verified_at": null
+    },
+    {
+      "id": "src-010",
+      "name": "Yang et al. \u2014 Large Language Models as Optimizers",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2309.03409",
+      "status": "identified",
+      "query": "\"large language model\" AND \"optimization\" AND \"combinatorial\"",
+      "verified_at": null
+    },
+    {
+      "id": "src-011",
+      "name": "Rossi, van Beek & Walsh \u2014 Handbook of Constraint Programming (Ch. 1-4: Fundamentals)",
+      "type": "reference_book",
+      "url": "https://doi.org/10.1016/S1574-6526(06)80006-4",
+      "status": "identified",
+      "query": "\"constraint satisfaction\" AND \"arc consistency\" AND \"sequential\" survey",
+      "verified_at": null
+    },
+    {
+      "id": "src-012",
+      "name": "Liu et al. \u2014 Algorithm Selection for Combinatorial Search Problems: A Survey",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/j.artint.2020.103431",
+      "status": "identified",
+      "query": "\"combinatorial search\" AND \"algorithm selection\" AND survey",
+      "verified_at": null
+    },
+    {
+      "id": "src-013",
+      "name": "Ahmetoglu et al. \u2014 EvoPrompting: Language Models for Code-Level Neural Architecture Search",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2302.14838",
+      "status": "identified",
+      "query": "\"EvoPrompting\" AND \"language model\" AND search",
+      "verified_at": null
+    },
+    {
+      "id": "src-014",
+      "name": "English Word Frequency Lists \u2014 SOWPODS / TWL / ENABLE dictionaries",
+      "type": "dataset",
+      "url": "https://www.wordgamedictionary.com/sowpods",
+      "status": "identified",
+      "query": "\"Scrabble dictionary\" AND (\"SOWPODS\" OR \"TWL\" OR \"ENABLE\") word list",
+      "verified_at": null
+    },
+    {
+      "id": "src-015",
+      "name": "Devil's Plan S1E3 \u2014 Word Tower game segment (Netflix / tvN broadcast)",
+      "type": "primary_source",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "requires_manual_review",
+      "query": "\"Devil's Plan\" AND \"Word Tower\" AND rules",
+      "verified_at": null
+    },
+    {
+      "id": "src-016",
+      "name": "Richards et al. \u2014 Min-Cost Flow for Cooperative Task Assignment",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1109/TRO.2006.886847",
+      "status": "identified",
+      "query": "\"min-cost flow\" AND \"cooperative\" AND \"assignment\" AND allocation",
+      "verified_at": null
+    },
+    {
+      "id": "src-017",
+      "name": "Hao et al. \u2014 Reasoning with Language Model is Planning with World Model",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2305.14992",
+      "status": "identified",
+      "query": "\"language model\" AND \"planning\" AND \"tree search\" AND reasoning",
+      "verified_at": null
+    },
+    {
+      "id": "src-018",
+      "name": "Yao et al. \u2014 Tree of Thoughts: Deliberate Problem Solving with LLMs",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2305.10601",
+      "status": "identified",
+      "query": "\"tree of thoughts\" AND \"LLM\" AND \"search\" AND planning",
+      "verified_at": null
+    },
+    {
+      "id": "src-019",
+      "name": "Browne et al. \u2014 A Survey of Monte Carlo Tree Search Methods",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1109/TCIAIG.2012.2186810",
+      "status": "identified",
+      "query": "\"Monte Carlo tree search\" AND survey AND cooperative",
+      "verified_at": null
+    },
+    {
+      "id": "src-020",
+      "name": "NASPA Scrabble AI Competition Reports",
+      "type": "grey_literature",
+      "url": "https://www.scrabbleplayers.org/",
+      "status": "requires_manual_review",
+      "query": "NASPA Scrabble AI tournament results AND evaluation",
+      "verified_at": null
+    },
+    {
+      "id": "src-021",
+      "name": "IEEE CoG \u2014 Conference on Games proceedings (word game / cooperative game tracks)",
+      "type": "conference_proceedings",
+      "url": "https://ieee-cog.org/",
+      "status": "identified",
+      "query": "IEEE CoG AND (\"word game\" OR \"cooperative game\") AND AI benchmark",
+      "verified_at": null
+    },
+    {
+      "id": "src-022",
+      "name": "Zhang et al. \u2014 Using Large Language Models for Combinatorial Optimization (survey)",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2407.01701",
+      "status": "identified",
+      "query": "\"large language model\" AND \"combinatorial optimization\" survey 2024",
+      "verified_at": null
+    }
+  ],
+  "count": 22,
+  "generated": "2026-04-17T15:39:35+00:00"
+}

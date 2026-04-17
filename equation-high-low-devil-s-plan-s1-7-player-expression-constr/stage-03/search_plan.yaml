@@ -1,0 +1,84 @@
+constraints:
+- Prefer Rust-native implementations; no heavy ML frameworks in first pass
+- Expression enumerator must compose with existing Shunting Yard parser in lib.rs
+- Bot source must compile as olympiad_bots::Bot trait impl
+- CFR reference implementation is vendor/robopoker/ (external-sampling MCCFR)
+- Autoresearch program format must match nine-mens-morris.md frontmatter schema
+generated: '2026-04-17'
+phases:
+- gates:
+  - Empirical count of achievable result sets for 3-6 card hands
+  - Mapping from expression count to equivalence class count
+  id: phase_1_expression_combinatorics
+  name: Expression space enumeration & abstraction
+  priority: P0
+  queries:
+  - expression tree enumeration combinatorial generation arithmetic operators
+  - hand abstraction poker CFR earth mover distance clustering
+  - integer partition arithmetic expression construction NP-hard complexity
+  - Shunting Yard algorithm all valid expressions generation
+  sq_ref: SQ-1
+- gates:
+  - Formal game tree specification with info-set count for 2-3 player simplified variant
+  id: phase_2_game_formalization
+  name: Extensive-form game tree with simultaneous + sequential moves
+  priority: P1
+  queries:
+  - simultaneous moves extensive form game conversion CFR
+  - Koller Megiddo stochastic games simultaneous moves information sets
+  - multi-stage poker game formalization betting rounds
+  - normal form to extensive form conversion simultaneous action
+  sq_ref: SQ-2
+- gates:
+  - Analytical or computed NE of direction subgame
+  - Conditions under which Swing is played at equilibrium
+  id: phase_3_direction_metagame
+  name: High/Low/Swing Nash equilibrium analysis
+  priority: P1
+  queries:
+  - high-low split pot poker equilibrium strategy
+  - three-way simultaneous declaration game Nash equilibrium
+  - swing bet all-or-nothing poker variant game theory
+  - Gale Kuhn poker split pot direction declaration
+  sq_ref: SQ-4
+- depends_on:
+  - phase_1_expression_combinatorics
+  - phase_2_game_formalization
+  gates:
+  - Modified MCCFR with construction-aware regret updates
+  - Convergence curve for simplified variant
+  id: phase_4_cfr_adaptation
+  name: MCCFR for endogenous hand construction
+  priority: P2
+  queries:
+  - counterfactual regret minimization endogenous action large action space
+  - MCCFR convergence proof multiplayer imperfect information
+  - action abstraction CFR large branching factor poker
+  - Pluribus multiplayer poker CFR blueprint strategy
+  - Zinkevich regret matching extensive form game
+  sq_ref: SQ-3
+- gates:
+  - programs/equation-high-low.md written and parseable by autoresearch harness
+  - RandomBot compiles and benchmarks against itself
+  id: phase_5_bot_progression
+  name: Autoresearch program design & bot hierarchy
+  priority: P0
+  queries:
+  - poker bot progression random baseline to optimal strategy
+  - incremental game AI difficulty levels heuristic to solver
+  - expression optimization maximize minimize arithmetic result
+  sq_ref: SQ-5
+- depends_on:
+  - phase_4_cfr_adaptation
+  gates:
+  - 'Empirical transfer test: 2p equilibrium strategy in 7p setting'
+  id: phase_6_multiplayer_scaling
+  name: 7-player dynamics, ICM, and elimination
+  priority: P3
+  queries:
+  - ICM independent chip model tournament poker multi-player
+  - multiplayer CFR scaling information set explosion
+  - poker tournament bubble factor elimination pressure
+  - strategy transfer two-player to N-player imperfect information
+  sq_ref: SQ-6
+topic: Equation High-Low (Devil's Plan S1) — expression-construction poker with CFR

@@ -1,0 +1,33 @@
+deduplication:
+  fuzzy_threshold: 0.9
+  method: title_doi_hash
+filters:
+  language:
+  - en
+  min_year: 2020
+  peer_review_preferred: true
+generated: '2026-04-17T15:08:39+00:00'
+search_strategies:
+- max_results_per_query: 60
+  name: keyword_core
+  queries:
+  - Cooperative Puzzle
+  - Devil's Plan S1
+  - — 10-player cooperative jigsaw on rotating platform
+  - timing and turn-handoff optimization
+  - puzzle plan
+  sources:
+  - arxiv
+  - semantic_scholar
+  - openreview
+- depth: 1
+  name: backward_forward_citation
+  queries:
+  - plan cooperative
+  - cooperative jigsaw
+  sources:
+  - semantic_scholar
+  - google_scholar
+topic: Cooperative Puzzle (Devil's Plan S1) — 10-player cooperative jigsaw on rotating
+  platform, timing and turn-handoff optimization; scheduling and cooperative puzzle-solving
+  algorithms

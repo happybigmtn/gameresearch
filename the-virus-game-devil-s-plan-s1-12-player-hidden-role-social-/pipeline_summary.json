@@ -1,0 +1,20 @@
+{
+  "run_id": "rc-20260417-150045-aca3de",
+  "stages_executed": 3,
+  "stages_done": 3,
+  "stages_paused": 0,
+  "stages_blocked": 0,
+  "stages_failed": 0,
+  "degraded": false,
+  "from_stage": 1,
+  "final_stage": 3,
+  "final_status": "done",
+  "generated": "2026-04-17T15:04:37+00:00",
+  "content_metrics": {
+    "template_ratio": null,
+    "citation_verify_score": null,
+    "total_citations": null,
+    "verified_citations": null,
+    "degraded_sources": []
+  }
+}

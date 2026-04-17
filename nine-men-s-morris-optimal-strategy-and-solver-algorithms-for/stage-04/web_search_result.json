@@ -1,0 +1,164 @@
+{
+  "topic": "Nine Men's Morris optimal strategy and solver algorithms for 9-piece phase-based board game",
+  "web_results_count": 19,
+  "scholar_papers_count": 0,
+  "crawled_pages_count": 5,
+  "pdf_extractions_count": 0,
+  "has_search_answer": false,
+  "elapsed_seconds": 12.516017275993363,
+  "web_results": [
+    {
+      "title": "Nine Men&#x27;s Morris Strategy | Tips, Tactics &amp; Openings",
+      "url": "https://playabstractgames.com/en/nine-mens-morris/strategy/",
+      "snippet": "Nine Men&#x27;s Morris Strategy: Tips, Tactics &amp; Openings Nine Men&#x27;s Morris is a classic two-player abstract strategy board game dating back to the Roman Empire. Form mills, three pieces in a row, to remove your opponent&#x27;s pieces. The player who reduces their opponent to two pieces or blocks all their moves wins. This ancient game combines simple rules with deep strategic possibilities.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine men&#x27;s morris - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nine_men's_morris",
+      "snippet": "Nine men&#x27;s morris is a solved game, that is, a game whose optimal strategy has already been calculated. It has been shown that with perfect play from both players, the game results in a draw.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "How to win at Nine Men&#x27;s Morris - Board &amp; Card Games Stack Exchange",
+      "url": "https://boardgames.stackexchange.com/questions/15032/how-to-win-at-nine-mens-morris",
+      "snippet": "You can&#x27;t guarantee a win. In a 1996 paper called Solving Nine Men&#x27;s Morris, Ralph Gasser describes how he used search techniques to determine that, given best play, the game of nine men&#x27;s morris should end in a draw. In figure 11 of that paper, he gives a graph of the percentage of won positions for the player to move, against the number of stones each has on the board. The highest percentage ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris Book of Board Game Strategy - Archive.org",
+      "url": "https://archive.org/details/nine-mens-morris-book",
+      "snippet": "Although computer analysis shows that Nine Men&#x27;s Morris is a draw with optimal play, humans can learn much by playing this rather baffling board game. In 2,000 years, only one book has been published about the game, written before the era of modern computers.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Game Theory Application to Nine Men&#x27;s Morris : Networks Course blog for ...",
+      "url": "https://blogs.cornell.edu/info2040/2022/09/22/game-theory-application-to-nine-mens-morris/",
+      "snippet": "Game Theory Application to Nine Men&#x27;s Morris In 2012, a study was done by Martin Boyd and Christopher Hirunthanakorn on the game of Nine Men&#x27;s Morris - a board game played between two players - in order to find an optimal strategy that could ideally guarantee a win or a draw. The Nine Men&#x27;s Morris game involves a board with twenty-four spaces (depicted as &quot;dots&quot; or intersections ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris Game Strategies | PDF - Scribd",
+      "url": "https://www.scribd.com/document/378903636/Martin-Boyd-Cristopher-Hirunthanakorn-Nine-Men-s-Morris-pdf",
+      "snippet": "This document discusses the board game Nine Men&#x27;s Morris. It provides an overview of the game rules and objectives, which involve placing pieces on a board to form &quot;mills&quot; and remove opponent&#x27;s pieces. The document then summarizes research conducted on analyzing optimal strategies through programming, including developing an AI, adaptive programs, and analyzing different variants of the game ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Calculating Ultra-Strong and Extended Solutions for Nine Men&#x27;s Morris ...",
+      "url": "https://arxiv.org/pdf/1408.0032",
+      "snippet": "G\u00e1bor E. G\u00e9vay, and G\u00e1bor Danner Abstract\u2014The strong solutions of Nine Men&#x27;s Morris and its variant, Lasker Morris are well-known results (the starting positions are draws). We re-examined both of these games, and calculated extended strong solutions for them. By this we mean the game-theoretic values of all possible game states that could be reached from certain starting positions ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris, Triples Strategies - Smart Box Design",
+      "url": "https://smartboxdesign.com/ninemmstrategies.html",
+      "snippet": "Nine Men&#x27;s Morris, Triples is an exciting capture-and-defend strategy Palm game you play against the PDA. Learn winning strategies here.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "PDF Nine Men&#x27;s Morris Cube Algorithms - langnotes.com",
+      "url": "http://langnotes.com/CubeDesign/GameCubes/Acrobat/NineMensMorrisCubeAlgorithms.pdf",
+      "snippet": "Introduction Nine Men&#x27;s Morris is an abstract strategy board game for two players that emerged from the Roman Empire. The game is also known as Nine Man Morris, Mill, Mills, Merels, Merelles, and Merrills in English. Each player has nine pieces, or &quot;men&quot;, which move among the board&#x27;s twenty-four intersections. The object of the game is to leave the opposing player with fewer than three pieces ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris: Rules and Strategies \u2014 Mike Mabey",
+      "url": "https://blog.mikemabey.com/2022/09/nmm/",
+      "snippet": "Here are some things I really like about Nine Men&#x27;s Morris: The rules are simple, so teaching it to a friend doesn&#x27;t take very long. Even my three-year-old understands the mechanics and enjoys a game with me or his siblings. While it does require some strategy, it doesn&#x27;t require the same level of foresight, planning, and brainpower as chess.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris | Online Games for Kids | Toy Theater",
+      "url": "https://toytheater.com/nine-mens-morris/",
+      "snippet": "Play Nine Men&#x27;s Morris online free! Form mills, remove opponent pieces, and win by blocking moves in this classic two-player strategy board game.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris - Play Online on SolitaireParadise.com",
+      "url": "https://www.solitaireparadise.com/games_list/nine-mens-morris.html",
+      "snippet": "Nine Men&#x27;s Morris is a classic board game for two players where each player starts with nine pieces (men) and aims to form mills (three pieces aligned horizontally or vertically on the board). Creating a mill allows a player to remove an opponent&#x27;s piece, with the game ending when a player reduces the opponent to two pieces or traps them.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris: Rules, History &amp; Strategy of the Ancient Board Game",
+      "url": "https://www.ancientgames.org/nine-mens-morris/",
+      "snippet": "Learn the complete rules and fascinating history of Nine Men&#x27;s Morris, one of the world&#x27;s oldest strategy board games. Played from ancient Rome to medieval Europe.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Free Nine Men&#x27;s Morris online game - Playpager.com",
+      "url": "https://playpager.com/mill-game/",
+      "snippet": "Play Nine Men Morris online A game that combines strategy and tactics, and can be surprisingly deep and enjoyable. Nine Men&#x27;s Morris is believed to have been played in the Roman Empire, and is also referred to as nine-man morris, mill, mills, the mill game, merrills, ninepenny marl and &quot;cowboy checkers&quot; (it was often printed on the back of checkerboards). Play against the computer or ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Nine Men&#x27;s Morris | Board Game | BoardGameGeek",
+      "url": "https://boardgamegeek.com/boardgame/3886/nine-mens-morris",
+      "snippet": "Nine Men&#x27;s Morris is a very old game that has been played for thousands of years all over the world. It was most popular about five hundred years ago and was played by Monks in churches as well as on village greens throughout England.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Mill Game | Strategy board game also known as Nine men&#x27;s morris",
+      "url": "https://www.millgame.com/",
+      "snippet": "Play Mill Game (Nine men&#x27;s morris), the classic strategy board game played also by the romans. Play it on same device, online and offline.",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Play Nine Men&#x27;s Morris Online for Free",
+      "url": "https://www.onlinesologames.com/ninemensmorris",
+      "snippet": "Nine Men&#x27;s Morris is a two player strategy game. The board contains a grid with 24 intersecting points. Initially each player starts with 9 pieces of one color (black or white) outside the board. Players try to form &quot;mills&quot; (3 pieces aligned horizontally or vertically) which allows them to remove opponent&#x27;s piece from the game. The aim is to reduce opponent to two pieces or, leave opponent ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "Play Nine Mens Morris - FreeBoardGames.org",
+      "url": "https://www.freeboardgames.org/en/play/ninemensmorris",
+      "snippet": "Play Nine Men&#x27;s Morris, a free online game also known as Mills. You can play multi-player or with your friend locally!",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    },
+    {
+      "title": "The Rules of Nine Mens Morris / Merrills / Mill / Merels",
+      "url": "https://www.mastersofgames.com/rules/morris-rules.htm",
+      "snippet": "Nine Men&#x27;s Morris, also known as Merrills, Mill and Merels, is an old English game that goes back to antiquity - evidence has been found for the game in ancient Rome and possibly Ancient Egypt. More recently, references in the works of Shakespeare have given it an image of the archetypal medieval board game. Like most of the best games, Nine Mens Morris rules are simple, the objective being to ...",
+      "content": "",
+      "score": 0.0,
+      "source": "duckduckgo"
+    }
+  ],
+  "scholar_papers": []
+}

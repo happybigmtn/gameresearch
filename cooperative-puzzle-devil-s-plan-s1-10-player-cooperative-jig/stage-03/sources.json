@@ -1,0 +1,141 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Semantic Scholar",
+      "type": "academic_search_engine",
+      "url": "https://api.semanticscholar.org/graph/v1",
+      "status": "pending",
+      "query": "(cyclic access OR round-robin) AND multi-agent AND cooperative AND assembly",
+      "verified_at": null
+    },
+    {
+      "id": "S02",
+      "name": "arXiv \u2014 cs.MA (Multi-Agent Systems)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.MA/recent",
+      "status": "pending",
+      "query": "cooperative MARL communication handoff scheduling",
+      "verified_at": null
+    },
+    {
+      "id": "S03",
+      "name": "arXiv \u2014 cs.AI (Artificial Intelligence)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "status": "pending",
+      "query": "multi-agent reinforcement learning cooperative puzzle assembly",
+      "verified_at": null
+    },
+    {
+      "id": "S04",
+      "name": "ACM Digital Library",
+      "type": "academic_database",
+      "url": "https://dl.acm.org/",
+      "status": "pending",
+      "query": "cooperative assembly turn-based scheduling constraint satisfaction multi-agent",
+      "verified_at": null
+    },
+    {
+      "id": "S05",
+      "name": "IEEE Xplore",
+      "type": "academic_database",
+      "url": "https://ieeexplore.ieee.org/",
+      "status": "pending",
+      "query": "adaptive scheduling heterogeneous agents cooperative assembly rotating",
+      "verified_at": null
+    },
+    {
+      "id": "S06",
+      "name": "NeurIPS Proceedings",
+      "type": "conference_proceedings",
+      "url": "https://papers.nips.cc/",
+      "status": "pending",
+      "query": "MAPPO QMIX cooperative multi-agent communication bandwidth",
+      "verified_at": null
+    },
+    {
+      "id": "S07",
+      "name": "ICML Proceedings",
+      "type": "conference_proceedings",
+      "url": "https://proceedings.mlr.press/",
+      "status": "pending",
+      "query": "centralized training decentralized execution scalable cooperative",
+      "verified_at": null
+    },
+    {
+      "id": "S08",
+      "name": "AAMAS Proceedings (via IFAAMAS)",
+      "type": "conference_proceedings",
+      "url": "https://www.ifaamas.org/proceedings.html",
+      "status": "pending",
+      "query": "multi-agent task allocation cooperative scheduling role assignment",
+      "verified_at": null
+    },
+    {
+      "id": "S09",
+      "name": "Google Scholar",
+      "type": "academic_search_engine",
+      "url": "https://scholar.google.com/",
+      "status": "pending",
+      "query": "\"Devil's Plan\" rotating platform cooperative puzzle optimization",
+      "verified_at": null
+    },
+    {
+      "id": "S10",
+      "name": "ICRA/IROS Proceedings (IEEE RAS)",
+      "type": "conference_proceedings",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings",
+      "status": "pending",
+      "query": "multi-robot cooperative assembly sequential access shared workspace",
+      "verified_at": null
+    },
+    {
+      "id": "S11",
+      "name": "arXiv \u2014 cs.RO (Robotics)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.RO/recent",
+      "status": "pending",
+      "query": "multi-robot turn-based assembly coordination handoff protocol",
+      "verified_at": null
+    },
+    {
+      "id": "S12",
+      "name": "Connected Papers",
+      "type": "citation_graph_tool",
+      "url": "https://www.connectedpapers.com/",
+      "status": "pending",
+      "query": "seed: Rashid et al. 2018 QMIX; seed: Yu et al. 2022 MAPPO \u2014 explore cooperative MARL neighborhood",
+      "verified_at": null
+    },
+    {
+      "id": "S13",
+      "name": "Semantic Scholar \u2014 Jigsaw Puzzle Computing",
+      "type": "academic_search_engine",
+      "url": "https://api.semanticscholar.org/graph/v1",
+      "status": "pending",
+      "query": "jigsaw puzzle NP-complete computational solver algorithm",
+      "verified_at": null
+    },
+    {
+      "id": "S14",
+      "name": "DBLP Computer Science Bibliography",
+      "type": "bibliographic_index",
+      "url": "https://dblp.org/",
+      "status": "pending",
+      "query": "author:Foerster emergent communication; author:Sukhbaatar CommNet; author:Paikin jigsaw",
+      "verified_at": null
+    },
+    {
+      "id": "S15",
+      "name": "PapersWithCode \u2014 Multi-Agent RL",
+      "type": "benchmark_registry",
+      "url": "https://paperswithcode.com/task/multi-agent-reinforcement-learning",
+      "status": "pending",
+      "query": "cooperative MARL benchmarks environments 10+ agents",
+      "verified_at": null
+    }
+  ],
+  "count": 15,
+  "generated": "2026-04-17T15:08:39+00:00"
+}

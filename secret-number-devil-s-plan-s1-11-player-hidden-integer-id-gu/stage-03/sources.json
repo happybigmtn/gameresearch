@@ -1,0 +1,231 @@
+{
+  "sources": [
+    {
+      "id": "SRC-001",
+      "name": "Bard (2019) \u2014 Hanabi Challenge: A New Frontier for AI Research",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/j.artint.2019.103216",
+      "status": "candidate",
+      "query": "S2.3",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-002",
+      "name": "Hu et al. (2021) \u2014 Off-Belief Learning (Hanabi)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2103.04000",
+      "status": "candidate",
+      "query": "S2.3",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-003",
+      "name": "Crawford & Sobel (1982) \u2014 Strategic Information Transmission",
+      "type": "journal_article",
+      "url": "https://doi.org/10.2307/1913390",
+      "status": "candidate",
+      "query": "S2.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-004",
+      "name": "Grossman & Hart (1980) \u2014 Disclosure Laws and Takeover Bids",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1111/j.1540-6261.1980.tb02161.x",
+      "status": "candidate",
+      "query": "S2.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-005",
+      "name": "Milgrom (1981) \u2014 Good News and Bad News: Representation Theorems and Applications",
+      "type": "journal_article",
+      "url": "https://doi.org/10.2307/3003562",
+      "status": "candidate",
+      "query": "S2.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-006",
+      "name": "Achlioptas et al. (2008) \u2014 Random Constraint Satisfaction: A More Accurate Picture",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1007/978-3-540-85363-3_1",
+      "status": "candidate",
+      "query": "S1.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-007",
+      "name": "Gomes & Selman (2005) \u2014 Can Get Satisfaction (Phase Transitions in CSP)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1126/science.1107822",
+      "status": "candidate",
+      "query": "S1.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-008",
+      "name": "Myerson & Satterthwaite (1983) \u2014 Efficient Mechanisms for Bilateral Trading",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1006/jeth.1993.1066",
+      "status": "candidate",
+      "query": "S2.4",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-009",
+      "name": "Jackson & Wolinsky (1996) \u2014 A Strategic Model of Social and Economic Networks",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1006/jeth.1996.0108",
+      "status": "candidate",
+      "query": "S3.3",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-010",
+      "name": "Yu et al. (2022) \u2014 The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games (MAPPO)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2103.01955",
+      "status": "candidate",
+      "query": "S3.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-011",
+      "name": "Terry et al. (2021) \u2014 PettingZoo: Gym for Multi-Agent Reinforcement Learning",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2009.14471",
+      "status": "candidate",
+      "query": "S3.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-012",
+      "name": "Colman (2003) \u2014 Cooperation, Psychological Game Theory, and Limitations of Rationality in Social Interaction",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1017/S0140525X03000050",
+      "status": "candidate",
+      "query": "S4.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-013",
+      "name": "Post et al. (2008) \u2014 Deal or No Deal? Decision Making under Risk in a Large-Payoff Game Show",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1257/aer.98.1.38",
+      "status": "candidate",
+      "query": "S4.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-014",
+      "name": "Dyer & Kendrick (2014) \u2014 Computational Complexity of Counting Permutations with Constraints",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1137/120900234",
+      "status": "candidate",
+      "query": "S1.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-015",
+      "name": "Foerster et al. (2019) \u2014 Bayesian Action Decoder for Deep Multi-Agent RL",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1811.01458",
+      "status": "candidate",
+      "query": "S3.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-016",
+      "name": "Spence (1973) \u2014 Job Market Signaling",
+      "type": "journal_article",
+      "url": "https://doi.org/10.2307/1882010",
+      "status": "candidate",
+      "query": "S2.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-017",
+      "name": "Cover & Thomas (2006) \u2014 Elements of Information Theory (Ch. 2: Entropy, Mutual Information)",
+      "type": "textbook",
+      "url": "https://doi.org/10.1002/047174882X",
+      "status": "candidate",
+      "query": "S1.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-018",
+      "name": "Namuiwiki \u2014 Devil's Plan Secret Number Rules Page",
+      "type": "wiki",
+      "url": "https://namu.wiki/w/\ub354%20\ub370\ube4c\uc2a4%20\ud50c\ub79c/\uac8c\uc784#s-2",
+      "status": "candidate",
+      "query": "S4.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-019",
+      "name": "Lerer et al. (2020) \u2014 Improving Policies via Search in Cooperative Partially Observable Games",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1912.02318",
+      "status": "candidate",
+      "query": "S2.3",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-020",
+      "name": "Dughmi & Xu (2016) \u2014 Algorithmic Bayesian Persuasion",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1145/2897518.2897546",
+      "status": "candidate",
+      "query": "S2.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-021",
+      "name": "Gal et al. (2004) \u2014 Information Revelation and Random Utility in Experimental Auctions",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/j.geb.2003.06.002",
+      "status": "candidate",
+      "query": "S2.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-022",
+      "name": "Nayyar et al. (2013) \u2014 Decentralized Stochastic Control with Partial History Sharing",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1109/TAC.2013.2260375",
+      "status": "candidate",
+      "query": "S3.2",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-023",
+      "name": "Lanctot et al. (2017) \u2014 A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1711.00832",
+      "status": "candidate",
+      "query": "S3.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-024",
+      "name": "Haghtalab et al. (2022) \u2014 Demand Queries with Predictions in Combinatorial Auctions",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2205.00164",
+      "status": "candidate",
+      "query": "S1.1",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-025",
+      "name": "Sly (2010) \u2014 Computational Transition at the Uniqueness Threshold",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1109/FOCS.2010.34",
+      "status": "candidate",
+      "query": "S1.2",
+      "verified_at": null
+    }
+  ],
+  "count": 25,
+  "generated": "2026-04-17T15:33:54+00:00"
+}

@@ -1,0 +1,1 @@
+{"stage_name": "topic_init", "stage_num": 1, "category": "literature", "severity": "error", "description": "Stage topic_init failed: ACP prompt failed (exit 1): [acpx] session researchclaw-lit (fee4c2fa-0673-4aa9-9b5e-fb08bf230a73) · /home/r/Coding/autonomy · agent connected", "timestamp": "2026-04-17T17:00:15+00:00", "run_id": "rc-20260417-170008-022c2e"}

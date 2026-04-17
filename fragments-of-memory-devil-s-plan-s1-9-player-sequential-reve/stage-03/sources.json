@@ -1,0 +1,141 @@
+{
+  "sources": [
+    {
+      "id": "src_001",
+      "name": "Google Scholar",
+      "type": "academic_search",
+      "url": "https://scholar.google.com",
+      "status": "planned",
+      "query": "All phases \u2014 primary broad academic search engine",
+      "verified_at": null
+    },
+    {
+      "id": "src_002",
+      "name": "Semantic Scholar",
+      "type": "academic_search",
+      "url": "https://www.semanticscholar.org",
+      "status": "planned",
+      "query": "Phases 1\u20133 \u2014 citation-graph traversal and related-paper recommendations",
+      "verified_at": null
+    },
+    {
+      "id": "src_003",
+      "name": "arXiv (cs.GT + cs.MA + cs.AI)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org",
+      "status": "planned",
+      "query": "Phases 1, 2, 3, 5 \u2014 game theory, multi-agent systems, AI preprints",
+      "verified_at": null
+    },
+    {
+      "id": "src_004",
+      "name": "PubMed / PubMed Central",
+      "type": "biomedical_database",
+      "url": "https://pubmed.ncbi.nlm.nih.gov",
+      "status": "planned",
+      "query": "Phase 2 \u2014 calibrated memory decay and interference models from cognitive psychology",
+      "verified_at": null
+    },
+    {
+      "id": "src_005",
+      "name": "SSRN (Economics / Game Theory)",
+      "type": "preprint_repository",
+      "url": "https://www.ssrn.com",
+      "status": "planned",
+      "query": "Phases 1, 4, 6 \u2014 contest design, bounded rationality welfare, mechanism design working papers",
+      "verified_at": null
+    },
+    {
+      "id": "src_006",
+      "name": "ACM Digital Library",
+      "type": "academic_database",
+      "url": "https://dl.acm.org",
+      "status": "planned",
+      "query": "Phase 5 \u2014 MARL in game environments, exploitability metrics (EC, AAMAS, AAAI proceedings)",
+      "verified_at": null
+    },
+    {
+      "id": "src_007",
+      "name": "GitHub (OpenSpiel / PettingZoo)",
+      "type": "code_repository",
+      "url": "https://github.com",
+      "status": "planned",
+      "query": "Phase 5 \u2014 existing MARL environments for elimination/sequential games; PSRO implementations",
+      "verified_at": null
+    },
+    {
+      "id": "src_008",
+      "name": "JSTOR",
+      "type": "academic_database",
+      "url": "https://www.jstor.org",
+      "status": "planned",
+      "query": "Phases 1, 3 \u2014 classic sequential-decision and information-value papers (Econometrica, AER, GEB)",
+      "verified_at": null
+    },
+    {
+      "id": "src_009",
+      "name": "Econometrica / Games and Economic Behavior archives",
+      "type": "journal_archive",
+      "url": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
+      "status": "planned",
+      "query": "Phases 1, 2, 3 \u2014 foundational sequential game theory, information value, contest theory",
+      "verified_at": null
+    },
+    {
+      "id": "src_010",
+      "name": "Journal of Mathematical Psychology",
+      "type": "journal_archive",
+      "url": "https://www.sciencedirect.com/journal/journal-of-mathematical-psychology",
+      "status": "planned",
+      "query": "Phase 2 \u2014 formal memory models with calibrated parameters (decay curves, interference functions)",
+      "verified_at": null
+    },
+    {
+      "id": "src_011",
+      "name": "Netflix / Devil's Plan S1 primary source",
+      "type": "primary_media",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "planned",
+      "query": "Cross-cutting \u2014 exact rules, observed player strategies, elimination sequences for Fragments of Memory episodes",
+      "verified_at": null
+    },
+    {
+      "id": "src_012",
+      "name": "NeurIPS / ICML proceedings (OpenReview)",
+      "type": "conference_proceedings",
+      "url": "https://openreview.net",
+      "status": "planned",
+      "query": "Phase 5 \u2014 recent PSRO variants, MARL convergence results, exploitability bounds",
+      "verified_at": null
+    },
+    {
+      "id": "src_013",
+      "name": "Connected Papers",
+      "type": "citation_graph_tool",
+      "url": "https://www.connectedpapers.com",
+      "status": "planned",
+      "query": "All phases \u2014 visual citation-graph exploration from seed papers to find missed related work",
+      "verified_at": null
+    },
+    {
+      "id": "src_014",
+      "name": "Psychological Review / Psych Bulletin",
+      "type": "journal_archive",
+      "url": "https://psycnet.apa.org",
+      "status": "planned",
+      "query": "Phase 2 \u2014 authoritative reviews of forgetting curves (Wixted 2004, Averell & Heathcote 2011) and interference theory",
+      "verified_at": null
+    },
+    {
+      "id": "src_015",
+      "name": "DBLP Computer Science Bibliography",
+      "type": "academic_index",
+      "url": "https://dblp.org",
+      "status": "planned",
+      "query": "Phase 5 \u2014 author-based search for MARL/game-solving researchers (Lanctot, Lockhart, Hennes et al.)",
+      "verified_at": null
+    }
+  ],
+  "count": 15,
+  "generated": "2026-04-17T15:28:20+00:00"
+}

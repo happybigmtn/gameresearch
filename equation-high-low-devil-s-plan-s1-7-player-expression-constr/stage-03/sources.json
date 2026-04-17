@@ -1,0 +1,150 @@
+{
+  "sources": [
+    {
+      "id": "src_robopoker",
+      "name": "robopoker \u2014 MCCFR solver for NLHE",
+      "type": "codebase",
+      "url": "vendor/robopoker/",
+      "status": "verified_local",
+      "query": "external sampling MCCFR, hand abstraction, EMD clustering, blueprint strategy",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_ehl_engine",
+      "name": "EHL game engine (Olympiad plugin)",
+      "type": "codebase",
+      "url": "crates/olympiad/games/equation-high-low/src/lib.rs",
+      "status": "verified_local",
+      "query": "EqPhase state machine, expression parsing, betting, settlement, Shunting Yard",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_ehl_spec",
+      "name": "EHL game specification",
+      "type": "spec",
+      "url": "specs/160426-olympiad-games/dp-equation-high-low.md",
+      "status": "verified_local",
+      "query": "state types, constants, edge cases, tiebreak rules, chip conversion",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_autoresearch_harness",
+      "name": "Autoresearch harness (program loader + benchmark)",
+      "type": "codebase",
+      "url": "crates/olympiad/autoresearch/",
+      "status": "verified_local",
+      "query": "program YAML frontmatter, benchmark runner, journal JSONL, keep_threshold",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_nmm_program",
+      "name": "NMM autoresearch program (template)",
+      "type": "reference_impl",
+      "url": "crates/olympiad/autoresearch/programs/nine-mens-morris.md",
+      "status": "verified_local",
+      "query": "program format, search direction pattern, bot progression template",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_nmm_bots",
+      "name": "NMM bot progression (Random \u2192 Greedy \u2192 Minimax)",
+      "type": "reference_impl",
+      "url": "crates/olympiad/bots/nine-mens-morris/src/",
+      "status": "verified_local",
+      "query": "Bot trait impl pattern, greedy heuristic, minimax with eval",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_rules_authority",
+      "name": "Devil's Plan S1 Game Design Report \u2014 S1 Day 6 Main",
+      "type": "rules_doc",
+      "url": "research/devils_plan_s1_game_design_report.md",
+      "status": "verified_local",
+      "query": "Equation High-Low rules, operator cards, direction declaration, settlement",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "src_zinkevich_2007",
+      "name": "Zinkevich et al. \u2014 Regret Minimization in Games with Incomplete Information",
+      "type": "paper",
+      "url": "https://proceedings.neurips.cc/paper/2007/hash/08d98638c6fcd194a4b1e6992063e944-Abstract.html",
+      "status": "unverified",
+      "query": "CFR original paper, regret matching, extensive-form game convergence proof",
+      "verified_at": null
+    },
+    {
+      "id": "src_lanctot_2009",
+      "name": "Lanctot et al. \u2014 Monte Carlo Sampling for Regret Minimization in Extensive Games",
+      "type": "paper",
+      "url": "https://proceedings.neurips.cc/paper/2009/hash/00411460f7c92d2124a67ea0f4cb5f85-Abstract.html",
+      "status": "unverified",
+      "query": "MCCFR external sampling, outcome sampling, convergence guarantees",
+      "verified_at": null
+    },
+    {
+      "id": "src_brown_sandholm_2019",
+      "name": "Brown & Sandholm \u2014 Superhuman AI for multiplayer poker (Pluribus)",
+      "type": "paper",
+      "url": "https://www.science.org/doi/10.1126/science.aay2400",
+      "status": "unverified",
+      "query": "multiplayer MCCFR, blueprint strategy, real-time search, depth-limited solving",
+      "verified_at": null
+    },
+    {
+      "id": "src_johanson_2011",
+      "name": "Johanson et al. \u2014 Accelerating Best Response Calculation in Large Extensive Games",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/1109.4302",
+      "status": "unverified",
+      "query": "action abstraction, large action spaces in CFR, best response computation",
+      "verified_at": null
+    },
+    {
+      "id": "src_koller_megiddo_1992",
+      "name": "Koller & Megiddo \u2014 The Complexity of Two-Person Zero-Sum Games in Extensive Form",
+      "type": "paper",
+      "url": "https://doi.org/10.1016/S0899-8256(05)80004-7",
+      "status": "unverified",
+      "query": "extensive form game formalization, simultaneous moves, sequence form",
+      "verified_at": null
+    },
+    {
+      "id": "src_ganzfried_sandholm_2008",
+      "name": "Ganzfried & Sandholm \u2014 Computing Equilibria in Multiplayer Stochastic Games of Imperfect Information",
+      "type": "paper",
+      "url": "https://www.cs.cmu.edu/~sandholm/multiplayer.ijcai07.pdf",
+      "status": "unverified",
+      "query": "multiplayer equilibrium, split-pot games, high-low poker variants",
+      "verified_at": null
+    },
+    {
+      "id": "src_icm_harville",
+      "name": "Harville \u2014 ICM (Independent Chip Model) for tournament equity",
+      "type": "paper",
+      "url": "https://en.wikipedia.org/wiki/Independent_Chip_Model",
+      "status": "unverified",
+      "query": "chip utility nonlinearity, tournament bubble, elimination pressure, stack-dependent strategy",
+      "verified_at": null
+    },
+    {
+      "id": "src_expression_enumeration",
+      "name": "Countdown Numbers Game / arithmetic expression enumeration",
+      "type": "algorithmic_reference",
+      "url": "https://en.wikipedia.org/wiki/Countdown_(game_show)#Numbers_round",
+      "status": "unverified",
+      "query": "enumerate all arithmetic expressions from N numbers and operators, target value search",
+      "verified_at": null
+    },
+    {
+      "id": "src_brown_2020_combining",
+      "name": "Brown et al. \u2014 Combining Deep RL and Search for Imperfect-Information Games",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2007.13544",
+      "status": "unverified",
+      "query": "ReBeL, public belief state, value network + search for imperfect info games",
+      "verified_at": null
+    }
+  ],
+  "count": 16,
+  "generated": "2026-04-17T16:23:33+00:00"
+}

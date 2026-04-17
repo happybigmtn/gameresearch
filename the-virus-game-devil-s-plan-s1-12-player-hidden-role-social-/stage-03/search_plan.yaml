@@ -1,0 +1,34 @@
+deduplication:
+  fuzzy_threshold: 0.9
+  method: title_doi_hash
+filters:
+  language:
+  - en
+  min_year: 2020
+  peer_review_preferred: true
+generated: '2026-04-17T15:04:37+00:00'
+search_strategies:
+- max_results_per_query: 60
+  name: keyword_core
+  queries:
+  - Virus Game
+  - Devil's Plan S1
+  - — 12-player hidden-role social deduction with
+  - unique ID 1-12 in circular ring
+  - game plan
+  sources:
+  - arxiv
+  - semantic_scholar
+  - openreview
+- depth: 1
+  name: backward_forward_citation
+  queries:
+  - plan hidden-role
+  - hidden-role social
+  sources:
+  - semantic_scholar
+  - google_scholar
+topic: The Virus Game (Devil's Plan S1) — 12-player hidden-role social deduction with
+  3 asymmetric factions, unique ID 1-12 in circular ring, bounded public signals;
+  optimal strategies and equilibrium analysis for hidden-role games with asymmetric
+  information

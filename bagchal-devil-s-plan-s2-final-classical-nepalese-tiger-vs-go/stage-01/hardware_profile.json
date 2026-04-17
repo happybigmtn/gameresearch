@@ -1,0 +1,8 @@
+{
+  "has_gpu": true,
+  "gpu_type": "cuda",
+  "gpu_name": "NVIDIA RTX 500 Ada Generation Laptop GPU",
+  "vram_mb": 4094,
+  "tier": "limited",
+  "warning": "Local GPU (NVIDIA RTX 500 Ada Generation Laptop GPU, 4094 MB VRAM) has limited memory. Complex deep learning experiments may be slow or run out of memory. Consider using a remote GPU server for best results."
+}

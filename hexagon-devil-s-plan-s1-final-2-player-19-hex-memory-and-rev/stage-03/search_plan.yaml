@@ -1,0 +1,32 @@
+deduplication:
+  fuzzy_threshold: 0.9
+  method: title_doi_hash
+filters:
+  language:
+  - en
+  min_year: 2020
+  peer_review_preferred: true
+generated: '2026-04-17T16:46:37+00:00'
+search_strategies:
+- max_results_per_query: 60
+  name: keyword_core
+  queries:
+  - Devil's Plan S1 Final
+  - — 2-player 19-hex memory-and-reveal game with
+  - spatial memory puzzles and optimal query strategies
+  - hexagon plan
+  - plan final)
+  sources:
+  - arxiv
+  - semantic_scholar
+  - openreview
+- depth: 1
+  name: backward_forward_citation
+  queries:
+  - final) memory-and-reveal
+  - memory-and-reveal game
+  sources:
+  - semantic_scholar
+  - google_scholar
+topic: Hexagon (Devil's Plan S1 Final) — 2-player 19-hex memory-and-reveal game with
+  face-up numbers 1-10 per hex; spatial memory puzzles and optimal query strategies

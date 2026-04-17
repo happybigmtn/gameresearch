@@ -1,0 +1,7 @@
+{
+  "novelty": 6,
+  "specificity": 8,
+  "feasibility": 5,
+  "overall": 6.3,
+  "suggestion": "The topic is well-specified and structurally interesting, but faces two tensions: (1) novelty risk \u2014 formalizing a specific TV game is application-level work unless the structural contributions (3-faction ring-topology signaling games as a class) are foregrounded and shown to yield general results, and (2) feasibility risk \u2014 12-player extensive-form games with multi-round signaling and elimination likely exceed 10^8 information sets even after rotational symmetry reduction, making epsilon < 0.05 exploitability on a single GPU ambitious. Refined topic: **'Equilibrium Structure of Multi-Faction Hidden-Role Games on Ring Topologies'** \u2014 generalize beyond the Virus Game instance to the game class parameterized by (n players, k factions, ring topology, signal bound). Prove structural theorems about faction-asymmetric signaling equilibria for general (n, k), then instantiate computationally for tractable cases (n=6,8 with k=3). Use the Virus Game (n=12, k=3) as motivation and extrapolation target, not the sole object of study. This reframing raises novelty (new game class, not one game), improves feasibility (solve smaller instances with proven structural properties that transfer), and maintains specificity. Target AAMAS or EC over NeurIPS \u2014 the contribution is computational game theory, not learning."
+}

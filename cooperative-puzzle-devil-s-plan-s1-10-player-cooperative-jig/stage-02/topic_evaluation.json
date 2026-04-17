@@ -1,0 +1,7 @@
+{
+  "novelty": 6,
+  "specificity": 7,
+  "feasibility": 7,
+  "overall": 7,
+  "suggestion": "The cyclic-access constraint on cooperative assembly is a genuine gap in the MARL literature \u2014 most multi-agent assembly work assumes concurrent or on-demand access. The specificity is strong: 10 agents, rotating platform, fixed windows, handoff protocols, and a clear synthetic benchmark (RotatingTable-v0). Feasibility is solid given grid-based synthetic puzzles and single-GPU training. The main novelty risk is that reviewers may view this as 'standard MARL + scheduling constraint' rather than a fundamentally new problem class. To strengthen: (1) prove formally or empirically that optimal policies under cyclic access are structurally different from free-access optima (this is SQ1 \u2014 make it the paper's centerpiece, not just a validation step), (2) connect explicitly to shift-handoff problems in manufacturing/surgery where the cyclic constraint is real and economically significant, giving the formalization immediate applied value beyond the game-show framing, and (3) consider whether the handoff protocol design can be cast as a structured communication problem with information-theoretic bounds on minimum bandwidth, which would give the contribution theoretical depth beyond empirical comparisons."
+}

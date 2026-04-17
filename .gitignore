@@ -1,0 +1,8 @@
+# Local-only staging + logs
+_sweep.log
+_sweep2.log
+_sweep.nohup
+_sweep.sh
+
+# Cache from AutoResearchClaw
+.researchclaw_cache/

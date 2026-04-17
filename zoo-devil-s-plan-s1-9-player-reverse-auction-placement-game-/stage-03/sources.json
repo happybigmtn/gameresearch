@@ -1,0 +1,186 @@
+{
+  "sources": [
+    {
+      "id": "src_01",
+      "name": "Semantic Scholar API",
+      "type": "academic_search_engine",
+      "url": "https://api.semanticscholar.org/",
+      "status": "planned",
+      "query": "Primary engine for S01-S16, S19-S22. Supports field-of-study filtering, citation graph traversal, and bulk DOI resolution.",
+      "verified_at": null
+    },
+    {
+      "id": "src_02",
+      "name": "Google Scholar",
+      "type": "academic_search_engine",
+      "url": "https://scholar.google.com/",
+      "status": "planned",
+      "query": "Secondary engine for all academic searches. Better coverage of economics journals (Econometrica, AER, JET) and older working papers not indexed by S2.",
+      "verified_at": null
+    },
+    {
+      "id": "src_03",
+      "name": "arXiv preprint server",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/",
+      "status": "planned",
+      "query": "cs.GT, cs.MA, cs.LG, cs.AI categories. Primary source for MARL papers (S13-S16) and recent game theory preprints (S04, S11, S21).",
+      "verified_at": null
+    },
+    {
+      "id": "src_04",
+      "name": "JSTOR",
+      "type": "journal_archive",
+      "url": "https://www.jstor.org/",
+      "status": "planned",
+      "query": "Historical auction theory and mechanism design papers (S02, S05). Covers Econometrica, Journal of Economic Theory, Games and Economic Behavior back catalogs.",
+      "verified_at": null
+    },
+    {
+      "id": "src_05",
+      "name": "Morgan, Steiglitz, Reis 2003 \u2014 Spite bidding in common-value auctions",
+      "type": "seed_paper",
+      "url": "https://doi.org/10.1016/S0899-8256(02)00548-4",
+      "status": "planned",
+      "query": "Seed for S02. Foundational spite-bidding model \u2014 closest existing theory to Zoo's dumping mechanic. Forward-cite for post-2003 spite/sabotage auction literature.",
+      "verified_at": null
+    },
+    {
+      "id": "src_06",
+      "name": "Kamenica & Gentzkow 2011 \u2014 Bayesian Persuasion",
+      "type": "seed_paper",
+      "url": "https://doi.org/10.1257/aer.101.6.2590",
+      "status": "planned",
+      "query": "Seed for S07. Information design framework \u2014 Zoo's involuntary signaling through placement is a persuasion-adjacent problem. Forward-cite for multi-receiver extensions.",
+      "verified_at": null
+    },
+    {
+      "id": "src_07",
+      "name": "Bergemann & Morris 2019 \u2014 Information Design: A Unified Perspective",
+      "type": "seed_paper",
+      "url": "https://doi.org/10.1016/j.jet.2018.01.004",
+      "status": "planned",
+      "query": "Seed for S07. Survey of information design post-Bayesian persuasion. Covers multi-agent settings relevant to Zoo's 9-player type-inference problem.",
+      "verified_at": null
+    },
+    {
+      "id": "src_08",
+      "name": "Yu et al. 2022 \u2014 The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games",
+      "type": "seed_paper",
+      "url": "https://arxiv.org/abs/2103.01955",
+      "status": "planned",
+      "query": "Seed for S13. MAPPO reference paper. Forward-cite for competitive/mixed-motive extensions and scalability results beyond cooperative settings.",
+      "verified_at": null
+    },
+    {
+      "id": "src_09",
+      "name": "Jaderberg et al. 2017 \u2014 Population Based Training of Neural Networks",
+      "type": "seed_paper",
+      "url": "https://arxiv.org/abs/1711.09846",
+      "status": "planned",
+      "query": "Seed for S15. PBT methodology for hyperparameter search in multi-agent training. Forward-cite for PBT applications in game-playing agents.",
+      "verified_at": null
+    },
+    {
+      "id": "src_10",
+      "name": "Lanctot et al. 2019 \u2014 OpenSpiel",
+      "type": "seed_paper",
+      "url": "https://arxiv.org/abs/1908.09453",
+      "status": "planned",
+      "query": "Seed for S15. Framework reference for multi-agent game environments and evaluation metrics. Check if Zoo-like games exist in OpenSpiel's game catalog.",
+      "verified_at": null
+    },
+    {
+      "id": "src_11",
+      "name": "Devil's Plan Fandom Wiki",
+      "type": "fan_wiki",
+      "url": "https://the-devils-plan.fandom.com/",
+      "status": "planned",
+      "query": "S17. Primary rule source \u2014 episode-by-episode game breakdowns, player conditions listed, tile mechanics documented. Cross-reference with episode footage for ambiguities.",
+      "verified_at": null
+    },
+    {
+      "id": "src_12",
+      "name": "Reddit r/TheDevilsPlan",
+      "type": "community_forum",
+      "url": "https://www.reddit.com/r/TheDevilsPlan/",
+      "status": "planned",
+      "query": "S17, S18. Fan discussion threads dissecting Zoo mechanics, strategy debates, and rule clarifications. Search: 'Zoo rules', 'Zoo strategy', 'Zoo game mechanics'.",
+      "verified_at": null
+    },
+    {
+      "id": "src_13",
+      "name": "YouTube \u2014 Devil's Plan analysis channels",
+      "type": "video_analysis",
+      "url": "https://www.youtube.com/",
+      "status": "planned",
+      "query": "S17, S18. Search: 'Devil's Plan Zoo game analysis', 'Devil's Plan game theory'. Video breakdowns often capture rule details not in text sources.",
+      "verified_at": null
+    },
+    {
+      "id": "src_14",
+      "name": "Cooper & Fang 2008 \u2014 Understanding Overbidding in Second Price Auctions",
+      "type": "seed_paper",
+      "url": "https://doi.org/10.1257/aer.98.5.2066",
+      "status": "planned",
+      "query": "Seed for S02. Behavioral overbidding parallels strategic dumping \u2014 agents paying more than value to impose costs. Check if spite motive is isolated from joy-of-winning motive.",
+      "verified_at": null
+    },
+    {
+      "id": "src_15",
+      "name": "SSRN Economics Research Network",
+      "type": "working_paper_repository",
+      "url": "https://www.ssrn.com/",
+      "status": "planned",
+      "query": "Supplementary source for S02, S05, S08. Working papers on auction theory and mechanism design not yet published in journals.",
+      "verified_at": null
+    },
+    {
+      "id": "src_16",
+      "name": "PettingZoo multi-agent RL library",
+      "type": "software_documentation",
+      "url": "https://pettingzoo.farama.org/",
+      "status": "planned",
+      "query": "S13, S14. Environment API reference for implementing Zoo as a PettingZoo-compatible environment. Check existing environments for structural parallels.",
+      "verified_at": null
+    },
+    {
+      "id": "src_17",
+      "name": "Rosenthal 1973 \u2014 A class of games possessing pure-strategy Nash equilibria",
+      "type": "seed_paper",
+      "url": "https://doi.org/10.1007/BF01737559",
+      "status": "planned",
+      "query": "Seed for S03. Foundational congestion games paper. Zoo's dumping congestion effect may fit within or extend this framework. Check Milchtaich (1996) for weighted variants.",
+      "verified_at": null
+    },
+    {
+      "id": "src_18",
+      "name": "Netflix Devil's Plan S1 episodes",
+      "type": "primary_source",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "planned",
+      "query": "S17. Authoritative rule source \u2014 watch Zoo episode(s) for exact tile placement mechanics, round structure, scoring, tie-breaking, and condition reveal timing.",
+      "verified_at": null
+    },
+    {
+      "id": "src_19",
+      "name": "ACM Digital Library",
+      "type": "academic_search_engine",
+      "url": "https://dl.acm.org/",
+      "status": "planned",
+      "query": "Supplementary for S04, S13-S16. Conference proceedings (AAMAS, NeurIPS, ICML) for multi-agent RL and computational game theory papers.",
+      "verified_at": null
+    },
+    {
+      "id": "src_20",
+      "name": "Connected Papers",
+      "type": "citation_graph_tool",
+      "url": "https://www.connectedpapers.com/",
+      "status": "planned",
+      "query": "Verification phase. Visual citation graph exploration starting from seed papers to identify clusters we may have missed with keyword search alone.",
+      "verified_at": null
+    }
+  ],
+  "count": 20,
+  "generated": "2026-04-17T15:45:19+00:00"
+}

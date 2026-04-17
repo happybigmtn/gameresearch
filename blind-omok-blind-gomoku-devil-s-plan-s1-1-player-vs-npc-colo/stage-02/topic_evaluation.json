@@ -1,0 +1,7 @@
+{
+  "novelty": 7,
+  "specificity": 8,
+  "feasibility": 7,
+  "overall": 7.3,
+  "suggestion": "The topic is strong enough to proceed. To push novelty toward 8-9, sharpen the contribution around the memory-allocation-as-strategy formalism rather than the game variant itself. Specifically: (1) Frame the primary contribution as a general framework for 'strategic forgetting' in imperfect-recall extensive-form games, with Blind Omok as the testbed \u2014 this elevates it from 'we built an AI for a TV show game' to 'we formalize and solve a new class of decision problems.' (2) The strongest publishable result would be a theoretical characterization of the memory-performance frontier (information-theoretic lower bounds on memory needed for epsilon-optimal play) paired with empirical demonstration that learned agents approach this bound. (3) Consider connecting to the absentminded driver problem (Piccione & Rubinstein 1997) and recent work on resource-rational agents (Lieder & Griffiths 2020) to ground the contribution in established theory. The feasibility score reflects that the asymmetric 1-player-vs-NPC formulation is tractable within the stated compute budget, but RL convergence on the full 19x19 board is uncertain \u2014 plan ablations on 9x9 and 15x15 as primary results with 19x19 as validation."
+}

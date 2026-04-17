@@ -1,0 +1,335 @@
+meta:
+  created: '2026-04-17'
+  priority_order:
+  - SQ-1_formal_game_model
+  - SQ-2_dumping_equilibria
+  - SQ-5_marl_emergent_strategies
+  - SQ-4_type_inference_signaling
+  - SQ-3_spatial_topology
+  - SQ-6_price_of_hidden_information
+  scope: Literature retrieval for 6 sub-questions covering formal game model, dumping
+    equilibria, spatial topology effects, type inference/signaling, multi-agent RL
+    emergent strategies, and price of hidden information
+  topic: Zoo (Devil's Plan S1) — inverse auction theory and combinatorial placement
+    with dumping equilibria
+phases:
+- duration_days: 3
+  id: phase_1_foundations
+  name: Game-theoretic foundations and adjacent formulations
+  searches:
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 15-30
+    filters:
+      fields:
+      - cs.GT
+      - econ.TH
+      year_min: 2000
+    id: S01
+    purpose: Establish formalization precedents for multi-player Bayesian games with
+      combinatorial action spaces
+    query: Bayesian simultaneous-move game finite type space combinatorial action
+      space existence Nash equilibrium
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    - jstor
+    expected_yield: 10-20
+    filters:
+      fields:
+      - econ.TH
+      - cs.GT
+      year_min: 1995
+    id: S02
+    purpose: Find the closest existing theory to Zoo's dumping mechanic — spite/sabotage
+      in auction contexts
+    query: spite bidding reverse auction overbidding sabotage mechanism design
+    seed_papers:
+    - Morgan, Steiglitz, Reis 2003 — spite bidding in common-value auctions
+    - Cooper, Fang 2008 — understanding overbidding in second-price auctions
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 8-15
+    filters:
+      year_min: 2005
+    id: S03
+    purpose: Dumping congestion parallel — multiple dumpers targeting same region
+      mirrors congestion externality
+    query: congestion game incomplete information Bayesian heterogeneous agents
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    - arxiv
+    expected_yield: 5-12
+    filters:
+      fields:
+      - cs.GT
+      - cs.AI
+      - math.CO
+      year_min: 2010
+    id: S04
+    purpose: Existing work on games with spatial/grid action spaces and combinatorial
+      scoring
+    query: combinatorial game grid placement tile scoring optimization
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 8-15
+    filters:
+      year_min: 2000
+    id: S05
+    purpose: Zoo's lower-total-wins is structurally a reverse auction — find equilibrium
+      results for reverse/lowest-bid mechanisms
+    query: all-pay auction lowest-bid wins reverse first-price heterogeneous valuations
+  targets:
+  - SQ-1
+  - SQ-2
+- duration_days: 3
+  id: phase_2_information_dynamics
+  name: Signaling, screening, and information leakage in games
+  searches:
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 20-40
+    filters:
+      fields:
+      - econ.TH
+      - cs.GT
+      year_min: 2000
+    id: S06
+    purpose: Classical signaling theory — does Zoo's sequential-round structure produce
+      separating/pooling equilibria?
+    query: signaling game sequential moves type revelation pooling separating equilibrium
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 10-20
+    filters:
+      year_min: 2011
+    id: S07
+    purpose: Information design perspective — each player's placement is an involuntary
+      signal to 8 receivers
+    query: Bayesian persuasion information design multi-receiver network
+    seed_papers:
+    - Kamenica, Gentzkow 2011 — Bayesian persuasion
+    - Bergemann, Morris 2019 — information design survey
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 10-15
+    filters:
+      year_min: 2000
+    id: S08
+    purpose: Quantifying information gaps — theory for SQ-6's oracle-vs-realistic
+      comparison
+    query: value of information incomplete information game strategic cost uncertainty
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 5-10
+    filters:
+      fields:
+      - cs.MA
+      - cs.LG
+      - cs.AI
+      year_min: 2018
+    id: S09
+    purpose: Empirical methods for measuring type leakage in multi-agent RL rollouts
+    query: mutual information trajectory hidden type multi-agent partially observable
+  targets:
+  - SQ-4
+  - SQ-6
+- duration_days: 2
+  id: phase_3_spatial_and_network_games
+  name: Spatial game theory and topology-dependent equilibria
+  searches:
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 10-20
+    filters:
+      fields:
+      - cs.GT
+      - physics.soc-ph
+      year_min: 2005
+    id: S10
+    purpose: Does spatial structure qualitatively change equilibrium behavior vs unstructured
+      games?
+    query: spatial game theory grid network topology equilibrium lattice
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 5-10
+    filters:
+      year_min: 2000
+    id: S11
+    purpose: Adjacency-dependent conditions in Zoo parallel graph coloring constraints
+    query: graph coloring game competitive placement adjacency constraint
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 5-10
+    filters:
+      year_min: 2000
+    id: S12
+    purpose: Spatial competition models where position choice imposes externalities
+      — Hotelling-adjacent but multi-agent
+    query: spatial voting game placement externality position competition
+  targets:
+  - SQ-3
+- duration_days: 3
+  id: phase_4_marl_methods
+  name: Multi-agent RL for complex strategic environments
+  searches:
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 10-20
+    filters:
+      fields:
+      - cs.MA
+      - cs.LG
+      year_min: 2020
+    id: S13
+    purpose: Primary algorithm candidate — find convergence results, scalability limits,
+      partial-observability handling
+    query: MAPPO multi-agent proximal policy optimization partial observability self-play
+    seed_papers:
+    - Yu et al. 2022 — The Surprising Effectiveness of PPO in Cooperative Multi-Agent
+      Games
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 10-15
+    filters:
+      fields:
+      - cs.MA
+      - cs.LG
+      - cs.AI
+      year_min: 2019
+    id: S14
+    purpose: Methods for classifying/taxonomizing emergent strategies from trained
+      agents
+    query: emergent strategy multi-agent reinforcement learning self-play taxonomy
+      classification
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 8-12
+    filters:
+      year_min: 2017
+    id: S15
+    purpose: PBT as hyperparameter search and diversity mechanism for multi-agent
+      training
+    query: population-based training multi-agent game diverse strategies Nash
+    seed_papers:
+    - Jaderberg et al. 2017 — Population Based Training of Neural Networks
+    - Lanctot et al. 2017 — OpenSpiel
+  - engines:
+    - semantic_scholar
+    - arxiv
+    expected_yield: 8-12
+    filters:
+      year_min: 2018
+    id: S16
+    purpose: Metrics for evaluating whether trained agents approximate equilibrium
+      behavior
+    query: exploitability approximate Nash equilibrium multi-agent evaluation robustness
+  targets:
+  - SQ-5
+- duration_days: 1
+  id: phase_5_domain_context
+  name: Devil's Plan game rules, fan analysis, and reality TV game theory
+  searches:
+  - engines:
+    - google
+    - reddit
+    - youtube
+    - fandom_wiki
+    expected_yield: 5-15
+    filters: {}
+    id: S17
+    purpose: Primary source for game rules — fan wikis, episode recaps, discussion
+      threads documenting exact mechanics
+    query: Devil's Plan Zoo rules season 1 episode game mechanics
+  - engines:
+    - google
+    - youtube
+    - reddit
+    expected_yield: 3-8
+    filters: {}
+    id: S18
+    purpose: Existing informal game-theoretic analysis of Devil's Plan games by fans
+      or content creators
+    query: Devil's Plan game theory analysis strategy Netflix
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 3-8
+    filters:
+      year_min: 2010
+    id: S19
+    purpose: Precedent for using reality TV as source material for game-theoretic
+      research (Survivor, Big Brother, etc.)
+    query: reality TV show game theory strategic interaction experimental behavioral
+  targets:
+  - SQ-1
+- duration_days: 2
+  id: phase_6_cross_cutting
+  name: Cross-cutting themes and gap verification
+  searches:
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 10-20
+    filters:
+      year_min: 2000
+    id: S20
+    purpose: Gap verification — confirm no existing work addresses the specific combination
+      of features in Zoo
+    query: multi-player auction hidden type heterogeneous objective private value
+      simultaneous
+  - engines:
+    - semantic_scholar
+    - arxiv
+    - google_scholar
+    expected_yield: 3-8
+    filters:
+      year_min: 2010
+    id: S21
+    purpose: Direct novelty check — does anyone study dumping/sabotage in spatial
+      multi-agent games?
+    query: strategic dumping sabotage externality multi-agent grid board game
+  - engines:
+    - semantic_scholar
+    - google_scholar
+    expected_yield: 5-12
+    filters:
+      year_min: 1995
+    id: S22
+    purpose: Ensure we haven't missed core reverse-auction theory that subsumes Zoo's
+      structure
+    query: inverse auction lowest bidder wins mechanism design equilibrium characterization
+  targets:
+  - SQ-1
+  - SQ-2
+  - SQ-3
+  - SQ-4
+  - SQ-5
+  - SQ-6
+verification:
+  citation_chaining:
+    backward: Reference list scan for all papers scoring ≥7/10 relevance
+    forward: Semantic Scholar citing-papers API for all seed papers and top-5 results
+      per search
+  dedup_strategy: DOI-based dedup across all search results; title+author fuzzy match
+    for preprints
+  relevance_filter: 'Two-pass: abstract scan (reject <30% topical overlap), then full-text
+    skim of survivors'
+  saturation_criterion: Phase complete when last 10 new papers yield ≤1 novel relevant
+    result
+  total_expected_papers: 120-200 raw, 40-70 after relevance filtering, 20-35 core
+    corpus

@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "id": "src-001",
+      "name": "Semantic Scholar",
+      "type": "academic_api",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "status": "active",
+      "query": "\"Bagchal\" OR \"Baghchal\" OR \"Bagh-Chal\" OR \"tigers and goats\"",
+      "verified_at": null
+    },
+    {
+      "id": "src-002",
+      "name": "OpenAlex",
+      "type": "academic_api",
+      "url": "https://api.openalex.org/works",
+      "status": "degraded",
+      "query": "\"Bagchal\" OR \"Baghchal\" retrograde analysis game",
+      "verified_at": null
+    },
+    {
+      "id": "src-003",
+      "name": "arXiv",
+      "type": "preprint_repository",
+      "url": "https://export.arxiv.org/api/query",
+      "status": "active",
+      "query": "\"combinatorial game theory\" sum of games multi-board",
+      "verified_at": null
+    },
+    {
+      "id": "src-004",
+      "name": "Google Scholar",
+      "type": "web_scrape",
+      "url": "https://scholar.google.com/scholar",
+      "status": "active",
+      "query": "Bagchal Baghchal tiger goat board game AI",
+      "verified_at": null
+    },
+    {
+      "id": "src-005",
+      "name": "DBLP",
+      "type": "academic_index",
+      "url": "https://dblp.org/search/publ/api",
+      "status": "active",
+      "query": "Bagchal OR Baghchal OR asymmetric board game evaluation",
+      "verified_at": null
+    },
+    {
+      "id": "src-006",
+      "name": "ICGA Journal Archive",
+      "type": "journal_archive",
+      "url": "https://content.iospress.com/journals/icga-journal",
+      "status": "unverified",
+      "query": "Bagchal OR tiger goat OR asymmetric capture game",
+      "verified_at": null
+    },
+    {
+      "id": "src-007",
+      "name": "Lim 2009 \u2014 Retrograde Analysis",
+      "type": "primary_paper",
+      "url": "https://doi.org/10.1007/978-3-642-03808-4_1",
+      "status": "unverified",
+      "query": "Lim Bagchal retrograde analysis draw proof",
+      "verified_at": null
+    },
+    {
+      "id": "src-008",
+      "name": "Browne Solved Games Survey",
+      "type": "survey_paper",
+      "url": "https://doi.org/10.1109/TCIAIG.2012.2212960",
+      "status": "unverified",
+      "query": "Browne 2012 survey of solved combinatorial games",
+      "verified_at": null
+    },
+    {
+      "id": "src-009",
+      "name": "Reddit r/devils_plan",
+      "type": "community_forum",
+      "url": "https://www.reddit.com/r/TheDevilsPlan/",
+      "status": "unverified",
+      "query": "season 2 final Bagchal rules dual board mirror",
+      "verified_at": null
+    },
+    {
+      "id": "src-010",
+      "name": "Berlekamp Conway Guy \u2014 Winning Ways",
+      "type": "textbook",
+      "url": "https://doi.org/10.1201/9780429487309",
+      "status": "unverified",
+      "query": "sum of games thermography combinatorial game theory",
+      "verified_at": null
+    },
+    {
+      "id": "src-011",
+      "name": "Existing researchclaw cache",
+      "type": "local_cache",
+      "url": "file://.researchclaw_cache/literature/",
+      "status": "stale",
+      "query": "Nine Men's Morris (not Bagchal \u2014 needs new queries)",
+      "verified_at": "2026-04-15T00:00:00Z"
+    },
+    {
+      "id": "src-012",
+      "name": "Codebase \u2014 Bagchal engine",
+      "type": "primary_source",
+      "url": "file://crates/olympiad/games/bagchal/src/lib.rs",
+      "status": "verified",
+      "query": "dual-board rules, settle_match tie-break, 50-move stalemate",
+      "verified_at": "2026-04-17T00:00:00Z"
+    }
+  ],
+  "count": 12,
+  "generated": "2026-04-17T18:17:08+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Sturtevant 2003 \u2014 Multi-Player Game Tree Search",
+      "type": "thesis",
+      "url": "https://skatgame.net/mburo/ps/thesis_sturtevant.pdf",
+      "status": "unverified",
+      "query": "Sturtevant multi-player game tree search maxn paranoid best-reply",
+      "verified_at": null
+    },
+    {
+      "id": "S02",
+      "name": "Luckhart & Irani 1986 \u2014 Alpha-Beta for Multi-Player Games",
+      "type": "paper",
+      "url": "https://doi.org/10.1016/0004-3702(86)90092-3",
+      "status": "unverified",
+      "query": "Luckhart Irani multi-player alpha-beta pruning 1986",
+      "verified_at": null
+    },
+    {
+      "id": "S03",
+      "name": "Patashnik 1980 \u2014 Qubic: 4x4x4 Tic-Tac-Toe Solved",
+      "type": "paper",
+      "url": "https://doi.org/10.1090/S0025-5718-1980-0583518-7",
+      "status": "unverified",
+      "query": "Patashnik Qubic 4x4x4 tic-tac-toe solved 1980",
+      "verified_at": null
+    },
+    {
+      "id": "S04",
+      "name": "Gasser 1996 \u2014 Solving Nine Men's Morris (ETH thesis)",
+      "type": "thesis",
+      "url": "https://doi.org/10.3929/ethz-a-001634704",
+      "status": "unverified",
+      "query": "Gasser solving nine mens morris ETH retrograde analysis",
+      "verified_at": null
+    },
+    {
+      "id": "S05",
+      "name": "Schadd et al. 2008 \u2014 Best-Reply Search in Multi-Player Games",
+      "type": "paper",
+      "url": "https://dke.maastrichtuniversity.nl/m.winands/documents/BRS.pdf",
+      "status": "unverified",
+      "query": "Schadd Winands best-reply search multi-player games",
+      "verified_at": null
+    },
+    {
+      "id": "S06",
+      "name": "Sturtevant & Korf 2000 \u2014 Pruning in Multi-Player Games",
+      "type": "paper",
+      "url": "https://doi.org/10.1016/S0004-3702(01)00091-0",
+      "status": "unverified",
+      "query": "Sturtevant Korf pruning multi-player game search",
+      "verified_at": null
+    },
+    {
+      "id": "S07",
+      "name": "Anthony, Tian & Barber 2017 \u2014 Expert Iteration (ExIt)",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/1705.08439",
+      "status": "unverified",
+      "query": "Anthony Tian Barber expert iteration thinking fast slow deep RL",
+      "verified_at": null
+    },
+    {
+      "id": "S08",
+      "name": "Silver et al. 2018 \u2014 AlphaZero (general game learning)",
+      "type": "paper",
+      "url": "https://doi.org/10.1126/science.aar6404",
+      "status": "unverified",
+      "query": "AlphaZero Silver 2018 mastering games self-play",
+      "verified_at": null
+    },
+    {
+      "id": "S09",
+      "name": "Schaeffer et al. 2007 \u2014 Checkers Is Solved",
+      "type": "paper",
+      "url": "https://doi.org/10.1126/science.1144079",
+      "status": "unverified",
+      "query": "Schaeffer checkers solved retrograde analysis endgame database",
+      "verified_at": null
+    },
+    {
+      "id": "S10",
+      "name": "Stahlhacke \u2014 M\u00fchle (Nine Men's Morris) Perfect Play Database",
+      "type": "database",
+      "url": "https://www.muehlespiel.eu/index.php/en/",
+      "status": "unverified",
+      "query": "Stahlhacke Muehle nine mens morris perfect play database",
+      "verified_at": null
+    },
+    {
+      "id": "S11",
+      "name": "Sturtevant & Bowling 2006 \u2014 Paranoid vs Max-N in Practice",
+      "type": "paper",
+      "url": "https://webdocs.cs.ualberta.ca/~bowling/papers/06aaai-paranoid.pdf",
+      "status": "unverified",
+      "query": "Sturtevant Bowling paranoid maxn empirical comparison multi-player",
+      "verified_at": null
+    },
+    {
+      "id": "S12",
+      "name": "Zuckerman et al. 2009 \u2014 Coalition Formation in Multi-Player Games",
+      "type": "paper",
+      "url": "https://doi.org/10.1016/j.artint.2009.02.004",
+      "status": "unverified",
+      "query": "coalition formation multi-player combinatorial game theory alliance",
+      "verified_at": null
+    },
+    {
+      "id": "S13",
+      "name": "Braverman et al. 2008 \u2014 Mafia: Statistical Deduction Game",
+      "type": "paper",
+      "url": "https://doi.org/10.1214/07-AAP456",
+      "status": "unverified",
+      "query": "Mafia deduction game optimal strategy Bayesian hidden role",
+      "verified_at": null
+    },
+    {
+      "id": "S14",
+      "name": "Existing NMM autoresearch sources (local)",
+      "type": "local_file",
+      "url": "file://~/Coding/gamedesign/nine-men-s-morris-optimal-strategy-and-solver-algorithms-for/stage-03/sources.json",
+      "status": "unverified",
+      "query": "NMM research sources Gasser Stahlhacke AlphaZero MuZero",
+      "verified_at": null
+    },
+    {
+      "id": "S15",
+      "name": "Four-Player Three-Row Game Engine (local)",
+      "type": "source_code",
+      "url": "file://crates/olympiad/games/four-player-three-row/src/lib.rs",
+      "status": "verified",
+      "query": "game rules, winning_lines(), hostile mechanic, action types",
+      "verified_at": "2026-04-17T00:00:00Z"
+    }
+  ],
+  "count": 15,
+  "generated": "2026-04-17T16:33:49+00:00"
+}

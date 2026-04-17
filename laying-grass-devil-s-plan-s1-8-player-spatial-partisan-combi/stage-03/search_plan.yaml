@@ -1,0 +1,97 @@
+deduplication:
+  fuzzy_threshold: 0.9
+  method: title_doi_hash
+filters:
+  language:
+  - en
+  min_year: 2000
+  peer_review_preferred: true
+generated: '2026-04-17T16:10:00+00:00'
+search_strategies:
+- description: Core topic queries spanning CGT, spatial games, and tile-placement.
+    Broad enough to catch cross-disciplinary work.
+  max_results_per_query: 60
+  name: S1_keyword_core
+  queries:
+  - '"combinatorial game theory" AND (spatial OR territorial OR grid)'
+  - '"tile placement" AND (competitive OR adversarial) AND strategy'
+  - '"connectivity constraint" AND (game OR combinatorial)'
+  - Laying Grass OR 땅따먹기 OR "Devil's Plan"
+  - '"partisan game" AND (multiplayer OR multi-player) AND board'
+  - '"territory game" AND (combinatorial OR game theory)'
+  sources:
+  - arxiv
+  - semantic_scholar
+  - google_scholar
+  - dblp
+- description: 'Combinatorial game theory foundations: temperature, thermography,
+    decomposition, Sprague-Grundy for partisan games. Maps to SQ1 and SQ2.'
+  max_results_per_query: 40
+  name: S2_cgt_theory
+  queries:
+  - '"thermography" AND ("combinatorial game" OR CGT)'
+  - '"temperature" AND "combinatorial game theory" AND (bound OR computation)'
+  - '"Sprague-Grundy" AND (partisan OR spatial)'
+  - '"game decomposition" AND (connectivity OR topology OR constraint)'
+  - '"zugzwang" AND (combinatorial OR game theory OR board game)'
+  - '"first-mover advantage" AND (combinatorial OR territorial OR grid)'
+  - Berlekamp OR Conway OR Guy AND "combinatorial game"
+  - '"surreal number" AND game AND (position OR valuation)'
+  sources:
+  - arxiv
+  - semantic_scholar
+  - mathscinet
+- description: Multi-agent RL and GNN-based game evaluation. Maps to SQ4 and SQ5.
+  max_results_per_query: 50
+  name: S3_marl_gnn
+  queries:
+  - MAPPO OR IPPO AND "multi-agent" AND (board game OR spatial)
+  - '"graph neural network" AND (board game OR game evaluation OR game state)'
+  - '"AlphaZero" AND (variant OR extension OR spatial)'
+  - '"multi-agent reinforcement learning" AND (territory OR spatial OR grid)'
+  - '"self-play" AND (multi-player OR free-for-all OR N-player)'
+  - '"GNN" AND "policy network" AND (game OR board)'
+  - '"mean field" AND (game OR multi-agent) AND spatial'
+  sources:
+  - arxiv
+  - semantic_scholar
+  - openreview
+- description: Spatial and territorial game analysis, competitive coloring, Blokus,
+    Hex, Go-adjacent theory. Maps to SQ1, SQ3, SQ6.
+  max_results_per_query: 40
+  name: S4_spatial_territorial
+  queries:
+  - Blokus AND (strategy OR algorithm OR AI OR analysis)
+  - '"competitive graph coloring" AND grid'
+  - '"territorial game" AND (analysis OR agent OR AI)'
+  - '"Go" AND "combinatorial game theory" AND (temperature OR endgame)'
+  - '"Hex" AND (game theory OR strategy OR connectivity)'
+  - '"polyomino" AND (placement OR tiling OR competitive)'
+  - '"n-player" AND "combinatorial game" AND (coalition OR alliance)'
+  - '"spatial game" AND (partition OR territory OR connectivity)'
+  sources:
+  - arxiv
+  - semantic_scholar
+  - google_scholar
+- depth: 1
+  description: Citation chaining from known seed papers. Depth-1 backward and forward
+    from Cincotti, Calistrate/Albert/Nowakowski, and key MARL papers.
+  name: S5_backward_forward_citation
+  queries:
+  - Cincotti AND "combinatorial game" AND multiplayer
+  - Calistrate AND "probabilistic" AND combinatorial
+  - AlphaZero AND "game theory"
+  seed_papers:
+  - Cincotti (2007) — N-player combinatorial games
+  - Calistrate, Albert & Nowakowski — probabilistic combinatorial games
+  - Silver et al. (2018) — AlphaZero
+  - Yu et al. (2022) — MAPPO
+  - Berlekamp, Conway & Guy — Winning Ways
+  - Siegel (2013) — Combinatorial Game Theory
+  sources:
+  - semantic_scholar
+  - google_scholar
+topic: Laying Grass (Devil's Plan S1) — 8-player spatial partisan-combinatorial game
+  on 30x30 grid with inverted adjacency rules (own tiles adjacent, enemy tiles separate),
+  steal/stone/tile-swap power cells; combinatorial game theory for spatial territory
+  games

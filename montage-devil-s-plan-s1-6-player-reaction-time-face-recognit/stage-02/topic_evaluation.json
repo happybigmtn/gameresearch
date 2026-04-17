@@ -1,0 +1,7 @@
+{
+  "novelty": 7,
+  "specificity": 8,
+  "feasibility": 7,
+  "overall": 7.3,
+  "suggestion": "The topic is above threshold \u2014 no pivot needed. To strengthen novelty from 7 to 8+, sharpen the contribution around the penalty-induced non-stationarity: the claim that escalating penalties create qualitatively different equilibrium structure (phase transitions, symmetry breaking) compared to penalty-free timing games is the most publishable angle. Frame the paper as 'Dynamic Signal Detection Games with Accumulating Costs' rather than anchoring on the TV show \u2014 the Montage game is a motivating example, not the contribution. Two refinements: (1) Prove analytically that there exists a critical penalty threshold above which the symmetric BNE breaks \u2014 this is a stronger result than just observing it in RL. (2) Connect to the existing 'social SDT' literature (Sorkin & Dai 1994, Bahrami et al. 2010 on collective decision-making) to position the work at the intersection of computational game theory and cognitive science, which broadens the audience beyond pure ML venues to CogSci/AAMAS/NeurIPS."
+}

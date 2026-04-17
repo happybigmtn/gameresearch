@@ -1,0 +1,141 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Semantic Scholar API",
+      "type": "academic_search_engine",
+      "url": "https://api.semanticscholar.org/graph/v1",
+      "status": "pending",
+      "query": "commitment game rule composition; adversarial mechanism design; production system game theory; predicate coordination failure",
+      "verified_at": null
+    },
+    {
+      "id": "S02",
+      "name": "Google Scholar",
+      "type": "academic_search_engine",
+      "url": "https://scholar.google.com/",
+      "status": "pending",
+      "query": "player-authored rules game equilibrium; self-referential rule composition; commitment composition game; resource loop mechanism design",
+      "verified_at": null
+    },
+    {
+      "id": "S03",
+      "name": "arXiv \u2014 cs.GT (Game Theory)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.GT/recent",
+      "status": "pending",
+      "query": "computational mechanism design; commitment game Nash equilibrium; strategic delegation one-shot; player-designed mechanism",
+      "verified_at": null
+    },
+    {
+      "id": "S04",
+      "name": "arXiv \u2014 cs.MA (Multi-Agent Systems)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.MA/recent",
+      "status": "pending",
+      "query": "adversarial rule composition multi-agent; emergent strategy self-play; MARL rule discovery; cooperative-competitive mechanism",
+      "verified_at": null
+    },
+    {
+      "id": "S05",
+      "name": "arXiv \u2014 cs.AI (Artificial Intelligence)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "status": "pending",
+      "query": "production system cascade evaluation; rule-based system termination; reactive program composition; recognize-act cycle analysis",
+      "verified_at": null
+    },
+    {
+      "id": "S06",
+      "name": "arXiv \u2014 cs.FL + cs.LO (Formal Languages / Logic)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/list/cs.FL/recent",
+      "status": "pending",
+      "query": "term rewriting confluence termination; critical pair completion; reactive system verification liveness; Petri net reachability unbounded",
+      "verified_at": null
+    },
+    {
+      "id": "S07",
+      "name": "ACM EC Conference (Economics and Computation)",
+      "type": "conference_proceedings",
+      "url": "https://dl.acm.org/conference/ec",
+      "status": "pending",
+      "query": "automated mechanism design; combinatorial auction bidding language; commitment device strategic interaction; rule-based market design",
+      "verified_at": null
+    },
+    {
+      "id": "S08",
+      "name": "AAMAS Proceedings (via IFAAMAS)",
+      "type": "conference_proceedings",
+      "url": "https://www.ifaamas.org/proceedings.html",
+      "status": "pending",
+      "query": "multi-agent coordination rule system; emergent behavior adversarial composition; mechanism design heterogeneous agents; predicate coordination",
+      "verified_at": null
+    },
+    {
+      "id": "S09",
+      "name": "Games and Economic Behavior (Elsevier)",
+      "type": "journal",
+      "url": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
+      "status": "pending",
+      "query": "commitment game strategic delegation; one-shot mechanism design simultaneous; Nash equilibrium program composition; cheap talk coordination",
+      "verified_at": null
+    },
+    {
+      "id": "S10",
+      "name": "NeurIPS Proceedings",
+      "type": "conference_proceedings",
+      "url": "https://proceedings.neurips.cc/",
+      "status": "pending",
+      "query": "multi-agent RL emergent strategy; self-play rule discovery; neural fictitious self-play; OpenSpiel game solving",
+      "verified_at": null
+    },
+    {
+      "id": "S11",
+      "name": "AAAI Digital Library",
+      "type": "conference_proceedings",
+      "url": "https://ojs.aaai.org/",
+      "status": "pending",
+      "query": "game-theoretic AI production system; adversarial multi-agent equilibrium; strategic rule authoring; automated game design",
+      "verified_at": null
+    },
+    {
+      "id": "S12",
+      "name": "Netflix \u2014 Devil's Plan S1",
+      "type": "primary_source_media",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "pending",
+      "query": "Rules Race episode(s) \u2014 direct rule extraction, cascade mechanics verification, alliance strategy analysis",
+      "verified_at": null
+    },
+    {
+      "id": "S13",
+      "name": "Reddit r/DevilsPlan + community wikis",
+      "type": "community_forum",
+      "url": "https://www.reddit.com/r/DevilsPlan/",
+      "status": "pending",
+      "query": "Rules Race strategy analysis; resource loop exploit mechanics; alliance rule coordination; Devil's Plan S1 game rules",
+      "verified_at": null
+    },
+    {
+      "id": "S14",
+      "name": "GitHub (OpenSpiel, PettingZoo, rule engines)",
+      "type": "code_repository",
+      "url": "https://github.com/search",
+      "status": "pending",
+      "query": "commitment game solver; production rule engine; OpenSpiel mechanism design; PettingZoo custom environment",
+      "verified_at": null
+    },
+    {
+      "id": "S15",
+      "name": "Connected Papers \u2014 citation graph exploration",
+      "type": "citation_graph_tool",
+      "url": "https://www.connectedpapers.com/",
+      "status": "pending",
+      "query": "seed: Conitzer & Sandholm 2002 automated mechanism design; seed: Crawford & Sobel 1982; seed: Forgy 1982 Rete \u2014 explore neighborhoods",
+      "verified_at": null
+    }
+  ],
+  "count": 15,
+  "generated": "2026-04-17T15:23:28+00:00"
+}

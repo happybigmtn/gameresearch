@@ -1,0 +1,34 @@
+deduplication:
+  fuzzy_threshold: 0.9
+  method: title_doi_hash
+filters:
+  language:
+  - en
+  min_year: 2020
+  peer_review_preferred: true
+generated: '2026-04-17T15:28:20+00:00'
+search_strategies:
+- max_results_per_query: 60
+  name: keyword_core
+  queries:
+  - Fragments of Memory
+  - Devil's Plan S1
+  - — 9-player sequential-reveal memory competition with
+  - optimal stopping and information-game theory for
+  - fragments memory
+  sources:
+  - arxiv
+  - semantic_scholar
+  - openreview
+- depth: 1
+  name: backward_forward_citation
+  queries:
+  - memory plan
+  - plan sequential-reveal
+  - sequential-reveal memory
+  sources:
+  - semantic_scholar
+  - google_scholar
+topic: Fragments of Memory (Devil's Plan S1) — 9-player sequential-reveal memory competition
+  with single-wrong-answer elimination and question-order selection; optimal stopping
+  and information-game theory for adversarial memory tests

@@ -1,0 +1,150 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Google Scholar",
+      "type": "academic_search_engine",
+      "url": "https://scholar.google.com",
+      "status": "active",
+      "query": "Primary search engine for all phases P1\u2013P5. Use Publish or Perish for batch export.",
+      "verified_at": null
+    },
+    {
+      "id": "S02",
+      "name": "arXiv (cs.MA, cs.AI, cs.GT, math.CO)",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org",
+      "status": "active",
+      "query": "Multi-agent POMDP, MARL, game theory, combinatorial search. Filter by cs.MA + cs.GT cross-listings for highest relevance.",
+      "verified_at": null
+    },
+    {
+      "id": "S03",
+      "name": "Semantic Scholar API",
+      "type": "academic_api",
+      "url": "https://api.semanticscholar.org",
+      "status": "active",
+      "query": "Forward/backward citation graph traversal from anchor papers. Use /paper/{id}/citations and /paper/{id}/references endpoints.",
+      "verified_at": null
+    },
+    {
+      "id": "S04",
+      "name": "DBLP",
+      "type": "academic_index",
+      "url": "https://dblp.org",
+      "status": "active",
+      "query": "Venue-filtered search for AAMAS, AAAI, NeurIPS, IJCAI proceedings. Author disambiguation for prolific names (e.g., Oliehoek for Dec-POMDPs).",
+      "verified_at": null
+    },
+    {
+      "id": "S05",
+      "name": "JSTOR",
+      "type": "digital_library",
+      "url": "https://www.jstor.org",
+      "status": "active",
+      "query": "Historical weighing puzzle papers (Dyson 1946 era) and classic game theory (Crawford & Sobel 1982). American Mathematical Monthly archive.",
+      "verified_at": null
+    },
+    {
+      "id": "S06",
+      "name": "MathSciNet (AMS)",
+      "type": "academic_index",
+      "url": "https://mathscinet.ams.org",
+      "status": "requires_institutional_access",
+      "query": "Combinatorial search theory, weighing problem bounds, group testing. MSC codes: 94A20 (sampling theory), 62K05 (optimal designs), 05D05 (extremal set theory).",
+      "verified_at": null
+    },
+    {
+      "id": "S07",
+      "name": "zbMATH Open",
+      "type": "academic_index",
+      "url": "https://zbmath.org",
+      "status": "active",
+      "query": "Backup for MathSciNet \u2014 open access. Search 'balance weighing' and 'coin weighing problem' with MSC filtering.",
+      "verified_at": null
+    },
+    {
+      "id": "S08",
+      "name": "EconLit / RePEc",
+      "type": "academic_index",
+      "url": "https://ideas.repec.org",
+      "status": "active",
+      "query": "Cheap talk, Bayesian persuasion, information design, strategic communication. JEL codes: C72 (noncooperative games), D82 (asymmetric info), D83 (search/learning).",
+      "verified_at": null
+    },
+    {
+      "id": "S09",
+      "name": "ACM Digital Library",
+      "type": "digital_library",
+      "url": "https://dl.acm.org",
+      "status": "active",
+      "query": "AAMAS proceedings, EC (Economics and Computation) proceedings. Search 'multi-agent partially observable' and 'social deduction game'.",
+      "verified_at": null
+    },
+    {
+      "id": "S10",
+      "name": "Devil's Plan Fandom Wiki",
+      "type": "fan_wiki",
+      "url": "https://devils-plan.fandom.com",
+      "status": "pending_verification",
+      "query": "Scale Game rules page \u2014 room count, balance type, weight range, round structure, win condition. Cross-reference against episode footage.",
+      "verified_at": null
+    },
+    {
+      "id": "S11",
+      "name": "Reddit r/TheDevilsPlan",
+      "type": "community_forum",
+      "url": "https://www.reddit.com/r/TheDevilsPlan",
+      "status": "pending_verification",
+      "query": "Strategy analysis posts, rule clarification threads, player behavior breakdowns. Search 'scale game strategy' and 'weighing puzzle'.",
+      "verified_at": null
+    },
+    {
+      "id": "S12",
+      "name": "Naver Academic (Korean)",
+      "type": "academic_search_engine",
+      "url": "https://academic.naver.com",
+      "status": "pending_verification",
+      "query": "Korean-language analysis of \ub354 \ub370\ube4c\uc2a4 \ud50c\ub79c \uc800\uc6b8 \uac8c\uc784. May contain game-theory analyses from Korean academics given the show's domestic popularity.",
+      "verified_at": null
+    },
+    {
+      "id": "S13",
+      "name": "Papers With Code",
+      "type": "ml_benchmark_index",
+      "url": "https://paperswithcode.com",
+      "status": "active",
+      "query": "Search 'multi-agent reinforcement learning partial observability' and 'Hanabi' for benchmark comparisons and MAPPO implementation references.",
+      "verified_at": null
+    },
+    {
+      "id": "S14",
+      "name": "Knuth TAOCP Vol 3 \u00a76.2",
+      "type": "textbook",
+      "url": null,
+      "status": "requires_physical_copy",
+      "query": "Canonical treatment of sorting and searching with comparisons, including balance-weighing as a special case. Provides tightest known bounds for deterministic strategies.",
+      "verified_at": null
+    },
+    {
+      "id": "S15",
+      "name": "Oliehoek & Amato (2016) \u2014 Dec-POMDPs textbook",
+      "type": "textbook",
+      "url": "https://link.springer.com/book/10.1007/978-3-319-28929-8",
+      "status": "active",
+      "query": "Chapters on communication in Dec-POMDPs, complexity results, approximation algorithms. Key reference for SQ1 formalization choices.",
+      "verified_at": null
+    },
+    {
+      "id": "S16",
+      "name": "Aigner (1988) \u2014 Combinatorial Search",
+      "type": "textbook",
+      "url": null,
+      "status": "requires_library_access",
+      "query": "Chapter on weighing problems \u2014 covers Dyson's solution, generalizations, information-theoretic lower bounds. Definitive pre-2000 reference for SQ2.",
+      "verified_at": null
+    }
+  ],
+  "count": 16,
+  "generated": "2026-04-17T15:50:24+00:00"
+}

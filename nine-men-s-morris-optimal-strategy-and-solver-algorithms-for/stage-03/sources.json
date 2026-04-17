@@ -1,0 +1,141 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Gasser 1996 \u2014 Solving Nine Men's Morris",
+      "type": "thesis",
+      "url": "https://doi.org/10.3929/ethz-a-001587824",
+      "status": "unverified",
+      "query": "Gasser \"Nine Men's Morris\" solved retrograde analysis 1996",
+      "verified_at": null
+    },
+    {
+      "id": "S02",
+      "name": "Stahlhacke \u2014 M\u00fchle Perfect Play Database",
+      "type": "software_dataset",
+      "url": "http://muehle.jochen-stahlhacke.de/",
+      "status": "unverified",
+      "query": "Stahlhacke M\u00fchle retrograde database download",
+      "verified_at": null
+    },
+    {
+      "id": "S03",
+      "name": "Silver et al. 2018 \u2014 A general reinforcement learning algorithm that masters chess, shogi, and Go",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1126/science.aar6404",
+      "status": "unverified",
+      "query": "AlphaZero Silver 2018 self-play board game architecture",
+      "verified_at": null
+    },
+    {
+      "id": "S04",
+      "name": "Schrittwieser et al. 2020 \u2014 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1038/s41586-020-03051-4",
+      "status": "unverified",
+      "query": "MuZero Schrittwieser learned model planning",
+      "verified_at": null
+    },
+    {
+      "id": "S05",
+      "name": "Schaeffer et al. 2007 \u2014 Checkers Is Solved",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1126/science.1144079",
+      "status": "unverified",
+      "query": "Schaeffer Checkers solved Chinook retrograde",
+      "verified_at": null
+    },
+    {
+      "id": "S06",
+      "name": "Anthony, Tian & Barber 2017 \u2014 Thinking Fast and Slow with Deep Learning and Tree Search",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1705.08439",
+      "status": "unverified",
+      "query": "expert iteration board game policy improvement",
+      "verified_at": null
+    },
+    {
+      "id": "S07",
+      "name": "Perez et al. 2018 \u2014 FiLM: Visual Reasoning with a General Conditioning Layer",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1709.07871",
+      "status": "unverified",
+      "query": "FiLM conditioning feature-wise linear modulation",
+      "verified_at": null
+    },
+    {
+      "id": "S08",
+      "name": "Google Scholar \u2014 NMM search hub",
+      "type": "search_engine",
+      "url": "https://scholar.google.com/",
+      "status": "active",
+      "query": "all rounds \u2014 primary academic search",
+      "verified_at": null
+    },
+    {
+      "id": "S09",
+      "name": "Semantic Scholar \u2014 citation graph & API",
+      "type": "search_engine",
+      "url": "https://www.semanticscholar.org/",
+      "status": "active",
+      "query": "all rounds \u2014 forward/backward citation snowball",
+      "verified_at": null
+    },
+    {
+      "id": "S10",
+      "name": "arXiv \u2014 preprint search",
+      "type": "preprint_repository",
+      "url": "https://arxiv.org/",
+      "status": "active",
+      "query": "rounds 3-6 \u2014 neural architecture and RL methodology papers",
+      "verified_at": null
+    },
+    {
+      "id": "S11",
+      "name": "DBLP \u2014 CS bibliography",
+      "type": "bibliography_database",
+      "url": "https://dblp.org/",
+      "status": "active",
+      "query": "rounds 1-2 \u2014 author lookup for Gasser, Stahlhacke",
+      "verified_at": null
+    },
+    {
+      "id": "S12",
+      "name": "ACM Digital Library",
+      "type": "publisher_database",
+      "url": "https://dl.acm.org/",
+      "status": "active",
+      "query": "round 1 \u2014 Gasser publications and citing works",
+      "verified_at": null
+    },
+    {
+      "id": "S13",
+      "name": "GitHub Code Search \u2014 NMM implementations",
+      "type": "code_repository",
+      "url": "https://github.com/search",
+      "status": "active",
+      "query": "round 2 \u2014 open-source NMM engines with phase logic",
+      "verified_at": null
+    },
+    {
+      "id": "S14",
+      "name": "Sutton & Barto 2018 \u2014 Reinforcement Learning: An Introduction (2nd ed.)",
+      "type": "textbook",
+      "url": "http://incompleteideas.net/book/the-book-2nd.html",
+      "status": "unverified",
+      "query": "options framework hierarchical RL multi-phase MDP",
+      "verified_at": null
+    },
+    {
+      "id": "S15",
+      "name": "ETH Z\u00fcrich Research Collection",
+      "type": "institutional_repository",
+      "url": "https://www.research-collection.ethz.ch/",
+      "status": "unverified",
+      "query": "Gasser 1996 thesis full text fallback",
+      "verified_at": null
+    }
+  ],
+  "count": 15,
+  "generated": "2026-04-17T14:53:02+00:00"
+}

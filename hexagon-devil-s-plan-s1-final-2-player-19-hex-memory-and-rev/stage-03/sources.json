@@ -1,0 +1,132 @@
+{
+  "sources": [
+    {
+      "id": "SRC-HEX-001",
+      "name": "Devil's Plan Fandom Wiki \u2014 Hexagon Game Page",
+      "type": "fan_wiki",
+      "url": "https://the-devils-plan.fandom.com/wiki/Hexagon",
+      "status": "unverified",
+      "query": "\"Devil's Plan\" hexagon final game rules",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-002",
+      "name": "r/TheDevilsPlan subreddit \u2014 Game rules and strategy discussion threads",
+      "type": "forum",
+      "url": "https://www.reddit.com/r/TheDevilsPlan/",
+      "status": "unverified",
+      "query": "site:reddit.com \"Devil's Plan\" hexagon rules",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-003",
+      "name": "Luck & Vogel (1997) \u2014 Visual working memory capacity (3-4 object bound)",
+      "type": "academic_paper",
+      "url": "https://doi.org/10.1038/36846",
+      "status": "unverified",
+      "query": "memory set size visual working memory capacity Luck Vogel",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-004",
+      "name": "Cowan (2001) \u2014 The magical number four in short-term memory",
+      "type": "academic_paper",
+      "url": "https://doi.org/10.1017/S0140525X01003922",
+      "status": "unverified",
+      "query": "spatial memory capacity bounded recall optimal encoding",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-005",
+      "name": "Existing Rust implementation \u2014 crates/olympiad/games/hexagon/src/lib.rs",
+      "type": "primary_source_code",
+      "url": "file://crates/olympiad/games/hexagon/src/lib.rs",
+      "status": "verified",
+      "query": "N/A \u2014 direct codebase artifact",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "SRC-HEX-006",
+      "name": "NMM autoresearch program \u2014 programs/nmm.md (pipeline pattern reference)",
+      "type": "primary_source_code",
+      "url": "file://crates/olympiad/autoresearch/programs/nmm.md",
+      "status": "verified",
+      "query": "N/A \u2014 direct codebase artifact",
+      "verified_at": "2026-04-17"
+    },
+    {
+      "id": "SRC-HEX-007",
+      "name": "IS-MCTS \u2014 Information Set Monte Carlo Tree Search (Cowling et al. 2012)",
+      "type": "academic_paper",
+      "url": "https://doi.org/10.1109/TCIAIG.2012.2200894",
+      "status": "unverified",
+      "query": "information set Monte Carlo tree search memory game",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-008",
+      "name": "Signal Detection Theory applied to quiz-show buzzing (general SDT framework)",
+      "type": "academic_framework",
+      "url": "https://doi.org/10.4324/9781315164120",
+      "status": "unverified",
+      "query": "quiz show buzzer strategy game theory confidence threshold",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-009",
+      "name": "Concentration (card game) AI strategy \u2014 memory game bot design",
+      "type": "academic_paper",
+      "url": "https://doi.org/10.1016/j.artint.2005.10.001",
+      "status": "unverified",
+      "query": "concentration memory card game AI strategy",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-010",
+      "name": "Hexagonal grid geometry \u2014 collinear point enumeration on small hex lattices",
+      "type": "reference_material",
+      "url": "https://www.redblobgames.com/grids/hexagons/",
+      "status": "unverified",
+      "query": "hexagonal lattice line enumeration small grid collinear",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-011",
+      "name": "POMDP planning for games with forgotten observations",
+      "type": "academic_survey",
+      "url": "https://doi.org/10.1016/j.artint.2012.11.002",
+      "status": "unverified",
+      "query": "POMDP board game bounded memory agent",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-012",
+      "name": "War of attrition / preemption games \u2014 timing under uncertainty",
+      "type": "academic_paper",
+      "url": "https://doi.org/10.2307/2297483",
+      "status": "unverified",
+      "query": "war of attrition simultaneous move timing game",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-013",
+      "name": "Netflix Devil's Plan \u2014 official show page and episode guide",
+      "type": "primary_media",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "unverified",
+      "query": "\"Devil's Plan\" Netflix season 1 final hexagon",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-HEX-014",
+      "name": "Existing Hexagon knowledge base \u2014 docs/kb/ hexagon entries",
+      "type": "primary_source_code",
+      "url": "file://docs/kb/",
+      "status": "unverified",
+      "query": "N/A \u2014 direct codebase artifact, needs verification of current contents",
+      "verified_at": null
+    }
+  ],
+  "count": 14,
+  "generated": "2026-04-17T16:46:37+00:00"
+}

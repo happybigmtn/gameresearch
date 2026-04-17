@@ -1,0 +1,9 @@
+{
+  "stage_id": "03-search_strategy",
+  "run_id": "rc-20260417-164739-ccd795",
+  "duration_sec": 57.84,
+  "status": "failed",
+  "artifacts_count": 0,
+  "error": "ACP prompt failed (exit 1): [acpx] session researchclaw-lit (5687e3f1-9e77-47a6-a205-9f0b6c8db06b) \u00b7 /home/r/Coding/autonomy \u00b7 agent connected",
+  "timestamp": "2026-04-17T16:52:43+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "type": "api",
+      "url": "https://export.arxiv.org/api/query",
+      "status": "available",
+      "query": "Montage (Devil's Plan S1) \u2014 6-player reaction-time face-recognition buzzer with penalty accumulation; signal-detection and speed-accuracy tradeoffs in cooperative buzzer games",
+      "verified_at": "2026-04-17T16:05:54+00:00"
+    },
+    {
+      "id": "semantic_scholar",
+      "name": "Semantic Scholar",
+      "type": "api",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "status": "available",
+      "query": "Montage (Devil's Plan S1) \u2014 6-player reaction-time face-recognition buzzer with penalty accumulation; signal-detection and speed-accuracy tradeoffs in cooperative buzzer games",
+      "verified_at": "2026-04-17T16:05:54+00:00"
+    }
+  ],
+  "count": 2,
+  "generated": "2026-04-17T16:05:54+00:00"
+}

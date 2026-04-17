@@ -1,0 +1,309 @@
+meta:
+  created: 2026-04-17
+  goal: 'Retrieve foundational and frontier literature across three intersecting
+
+    domains — combinatorial weighing puzzles, multi-agent POMDPs, and
+
+    strategic communication (cheap talk / Bayesian persuasion) — to support
+
+    formalization, bounds derivation, equilibrium analysis, and RL agent
+
+    design for the 7-player, 3-room Scale Game.
+
+    '
+  scope_constraints:
+  - Prioritize papers with formal models over empirical-only game analyses
+  - Exclude popular-press recaps of Devil's Plan unless they contain strategy transcripts
+  - Weight range [1..W] with W <= 20 for tractability arguments
+  - Target AAMAS / AAAI / NeurIPS / EC venue standards
+  topic: Scale Game (Devil's Plan S1) — Multi-Agent Weighing Puzzle
+phases:
+- anchor_papers:
+  - Dyson (1946) — ternary encoding for balance puzzles
+  - Cairns (1963) — balance weighing with spring balances
+  - Aigner (1988) — Combinatorial Search (textbook ch. on weighing)
+  - Bshouty & Mazzawi (2011) — optimal coin weighing with unreliable coins
+  id: P1
+  maps_to:
+  - SQ1
+  - SQ2
+  name: Classical Weighing Puzzle Theory
+  priority: critical
+  queries:
+  - databases:
+    - scholar
+    - mathscinet
+    - zbmath
+    expected_hits: 15-30
+    q: counterfeit coin problem information-theoretic bounds
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 10-20
+    q: balance weighing puzzle query complexity lower bound
+  - databases:
+    - scholar
+    - jstor
+    expected_hits: 5-10
+    q: Dyson 1946 weighing problem ternary encoding
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 20-40
+    q: adaptive group testing combinatorial search bounds
+  - databases:
+    - scholar
+    - arxiv
+    - dblp
+    expected_hits: 0-5
+    notes: Likely gap — low hit count validates novelty claim
+    q: distributed weighing constraint propagation isolated rooms
+  verification: 'Check that Dyson 1946 is the correct attribution (sometimes cited
+    as
+
+    Dyson''s solution to a puzzle posed by Schell in American Mathematical
+
+    Monthly). Cross-reference Knuth TAOCP Vol 3 §6.2 for canonical treatment.
+
+    '
+- anchor_papers:
+  - Bernstein et al. (2002) — Complexity of Dec-POMDPs (NEXP-hard)
+  - Oliehoek & Amato (2016) — Concise Introduction to Dec-POMDPs (textbook)
+  - 'Yu et al. (2022) — MAPPO: surprising effectiveness in cooperative MARL'
+  - Gmytrasiewicz & Doshi (2005) — Interactive POMDPs (I-POMDPs)
+  id: P2
+  maps_to:
+  - SQ1
+  - SQ4
+  - SQ5
+  name: Decentralized POMDPs and Multi-Agent Planning
+  priority: critical
+  queries:
+  - databases:
+    - scholar
+    - dblp
+    - arxiv
+    expected_hits: 10-20
+    q: Dec-POMDP complexity NEXP-complete communication
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 15-30
+    q: multi-agent POMDP belief factorization scalable
+  - databases:
+    - scholar
+    - arxiv
+    - semanticscholar
+    expected_hits: 10-15
+    q: MAPPO multi-agent proximal policy optimization POMDP
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 10-20
+    q: interactive POMDP nested beliefs opponent modeling
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 15-25
+    q: particle filtering multi-agent belief tracking
+  verification: 'Confirm MAPPO reference is the correct Yu et al. 2022 ICLR or the
+
+    earlier arXiv version. Check whether I-POMDPs have been applied to
+
+    games with deception — if not, this is another novelty angle.
+
+    '
+- anchor_papers:
+  - Crawford & Sobel (1982) — Strategic information transmission
+  - Kamenica & Gentzkow (2011) — Bayesian persuasion
+  - Kartik (2009) — Strategic communication with lying costs
+  - Glazer & Rubinstein (2004) — On optimal rules of persuasion
+  id: P3
+  maps_to:
+  - SQ3
+  name: Strategic Communication — Cheap Talk and Bayesian Persuasion
+  priority: high
+  queries:
+  - databases:
+    - scholar
+    - jstor
+    - econlit
+    expected_hits: 20-40
+    q: cheap talk game equilibrium Crawford Sobel
+  - databases:
+    - scholar
+    - econlit
+    expected_hits: 15-30
+    q: Bayesian persuasion Kamenica Gentzkow information design
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 10-20
+    q: strategic information transmission deception detection signaling
+  - databases:
+    - scholar
+    - econlit
+    expected_hits: 10-15
+    q: verifiable vs unverifiable disclosure game theory
+  - databases:
+    - scholar
+    - econlit
+    - arxiv
+    expected_hits: 5-15
+    q: lying cost cheap talk equilibrium misreporting
+  verification: 'Ensure Crawford & Sobel''s uniform-quadratic model is cited correctly.
+
+    Check whether Kartik''s lying cost model has been extended to
+
+    multi-sender settings (relevant for multi-room reporting).
+
+    '
+- anchor_papers:
+  - Serrino et al. (2019) — Finding friend and foe in multi-agent games
+  - FAIR (2019) — Bard et al. Hanabi challenge
+  - Kopparapu & Deshmukh (2022) — Hidden Agenda (Werewolf AI)
+  id: P4
+  maps_to:
+  - SQ3
+  - SQ5
+  name: Social Deduction Games — Computational and Game-Theoretic
+  priority: medium
+  queries:
+  - databases:
+    - scholar
+    - arxiv
+    - dblp
+    expected_hits: 10-20
+    q: social deduction game AI Avalon Werewolf Mafia POMDP
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 5-15
+    q: deception detection multi-agent reinforcement learning
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 5-10
+    q: hidden role game equilibrium Bayesian
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 10-20
+    q: Hanabi multi-agent communication partial information
+  verification: 'Check if any computational work on social deduction games includes
+
+    a physical-deduction component (weighing, measuring) rather than
+
+    purely social signals. If none exists, this is a strong novelty marker.
+
+    '
+- anchor_papers:
+  - Lamport et al. (1982) — Byzantine generals problem
+  - De Bonis et al. (2005) — Group testing with lies
+  id: P5
+  maps_to:
+  - SQ2
+  - SQ3
+  name: Distributed Constraint Satisfaction and Byzantine Consensus
+  priority: medium
+  queries:
+  - databases:
+    - scholar
+    - dblp
+    - arxiv
+    expected_hits: 10-20
+    q: distributed constraint satisfaction partial observability agents
+  - databases:
+    - scholar
+    - dblp
+    expected_hits: 50+
+    notes: Over-broad — filter to information aggregation framing
+    q: Byzantine agreement consensus fault tolerance
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 0-5
+    notes: Targeted intersection — low hits expected and desired
+    q: Byzantine fault consensus information aggregation weighing
+  - databases:
+    - scholar
+    - arxiv
+    expected_hits: 5-15
+    q: adversarial group testing unreliable responses
+  verification: 'The Byzantine consensus literature is enormous. Focus only on papers
+
+    where agents aggregate local measurements under adversarial reporting —
+
+    not general BFT consensus. De Bonis provides the closest bridge.
+
+    '
+- anchor_sources:
+  - Netflix Devil's Plan S1E3-E4 (2023) — Scale Game episodes
+  - Devil's Plan Fandom Wiki — Scale Game page
+  id: P6
+  maps_to:
+  - SQ1
+  - SQ6
+  name: Domain Validation — Devil's Plan S1 Game Mechanics
+  priority: low-but-necessary
+  queries:
+  - databases:
+    - youtube
+    - reddit
+    - fandom_wiki
+    expected_hits: 5-15
+    q: Devil's Plan Season 1 Scale Game rules strategy analysis
+  - databases:
+    - naver
+    - korean_scholar
+    expected_hits: 3-10
+    notes: Korean-language sources for original game rules
+    q: 더 지니어스 데빌스 플랜 저울 게임
+  verification: 'Cross-reference at least two independent sources on game rules.
+
+    Key details to confirm: exact weight range, whether players know
+
+    their own weight, room reassignment rules between rounds, win
+
+    condition (deduce own weight vs. deduce all weights vs. ranking).
+
+    '
+post_retrieval:
+  citation_threshold: 'Include a paper if: (a) it is an anchor paper, (b) it appears
+    in >=2
+
+    phase queries, or (c) it has >50 citations AND is post-2015. For
+
+    niche intersection papers (P5 Byzantine + weighing), lower threshold
+
+    to any relevant hit regardless of citation count.'
+  deduplication: 'Merge results across phases — many papers will appear in multiple
+
+    query results (e.g., I-POMDP papers in both P2 and P4). Deduplicate
+
+    by DOI, keeping the earliest phase assignment for priority.
+
+    '
+  gap_analysis: 'After retrieval, identify the intersection region:
+
+    weighing_puzzles ∩ multi_agent ∩ strategic_communication.
+
+    If this intersection is empty (expected), document it explicitly
+
+    as the novelty claim. If non-empty, those papers become mandatory
+
+    related work and potential competitors.
+
+    '
+  snowball_strategy: 'From each anchor paper, follow forward citations (via Semantic
+    Scholar
+
+    API or Google Scholar) to find post-2020 work. Weighing puzzle theory
+
+    is mature (most work pre-2000) so forward citations catch rare updates.
+
+    MARL and Bayesian persuasion are active — expect substantial post-2020
+
+    forward citation chains.
+
+    '

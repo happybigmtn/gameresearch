@@ -1,0 +1,189 @@
+codebase_anchors:
+  autoresearch_template: crates/olympiad/autoresearch/programs/nine-mens-morris.md
+  bot_trait: crates/olympiad/bots/src/lib.rs
+  game_engine: crates/olympiad/games/four-player-three-row/src/lib.rs
+  nmm_bot_progression: crates/olympiad/bots/nine-mens-morris/src/lib.rs
+date: 2026-04-17
+execution_sequence:
+  phase_1:
+  - T1_formal_model
+  - T2_evaluation_heuristic
+  phase_2:
+  - T3_search_algorithms
+  - T4_skill_asymmetry
+  phase_3:
+  - T5_hostile_bayesian
+  phase_4:
+  - T6_tractability
+game_id: dp.four_player_three_row
+game_specification:
+  NOT_qubic: wins are 2D surface only — no vertical winning lines through stack layers
+  board: 4x4 grid, stack depth 3
+  hidden_information: one player secretly designated hostile; hostile win/tie inverts
+    all rewards
+  phases:
+  - placement: place_new — drop a token from hand onto any non-full cell
+  - movement: move_top_token — slide own top token to adjacent non-full cell (8-directional)
+  - pass: forced only — when no place or move is legal
+  players: 4
+  rounds_per_session: 4
+  termination:
+  - 3-in-a-row detected on top-visible surface
+  - all 4 players consecutively pass (draw)
+  tokens_per_player: 5
+  win_condition: 3 consecutive same-color tokens on the top-visible 2D surface (rows,
+    columns, diagonals)
+research_tracks:
+- deliverable: Game specification document with state space bounds, comparison to
+    Qubic/Connect4
+  description: 'Establish the correct game-theoretic classification. The game is NOT
+    Qubic
+
+    (4x4x4 free-placement with 3D winning lines). It is a 4-player stacking
+
+    game where only the top-visible 2D surface determines wins, and tokens can
+
+    be moved after placement.
+
+    '
+  id: T1_formal_model
+  priority: P0
+  search_queries:
+  - N-player stacking tic-tac-toe game theory formal model
+  - multi-player combinatorial game state space analysis
+  - Qubic 4x4x4 tic-tac-toe complexity vs 2D stacking variants
+  sub_questions:
+  - State space upper bound accounting for stack permutations (not just grid occupancy)
+  - 'Action space per phase: placement branching <=16, movement branching varies'
+  - 'Cycle detection: movement phase can create repeated positions unlike placement-only
+    games'
+  - Formal utility function under the hostile mechanic (asymmetric Bayesian game)
+  title: Formal Game Model
+- deliverable: GreedyBot for four-player-three-row with ablation study per feature
+  description: 'Hand-crafted evaluator for the 4-player top-visible board. Prerequisite
+
+    for any search algorithm. Follows NMM progression: greedy first, then
+
+    minimax with the evaluator.
+
+    '
+  features_to_evaluate:
+  - 'top_surface_threats: lines with 2 of your color showing + 3rd cell available'
+  - 'burial_value: placing on an opponent''s token removes their threat'
+  - 'center_control: cells (1,1),(1,2),(2,1),(2,2) participate in more winning lines'
+  - 'token_economy: remaining tokens in hand vs on board'
+  - 'stack_depth_exposure: a 3-deep stack is frozen for stacking but top token can
+    move'
+  - 'mobility: legal moves available to each player'
+  id: T2_evaluation_heuristic
+  priority: P0
+  search_queries:
+  - tic-tac-toe evaluation function multi-player heuristic
+  - Connect Four position evaluation features
+  - N-player board game static evaluation design
+  title: Position Evaluation Heuristic
+- algorithms:
+  - maxn: each player maximizes own utility independently
+  - paranoid: treat all opponents as a single adversary (reduce to 2-player alpha-beta)
+  - best_reply: only consider responses from the opponent who benefits most from responding
+  deliverable: Per-algorithm win rates measured separately for placement-decided vs
+    movement-decided games
+  description: 'Compare the three main N-player search algorithms across both game
+    phases.
+
+    Key hypothesis: paranoid search dominates during narrow placement phase
+
+    but may lose advantage during wider movement phase.
+
+    '
+  id: T3_search_algorithms
+  phase_analysis:
+  - 'placement: branching <=16, gravity-constrained — similar to Connect Four'
+  - 'movement: branching varies, potentially 20+ per player — no gravity constraint'
+  priority: P1
+  search_queries:
+  - Sturtevant 2003 multi-player game tree search maxn paranoid comparison
+  - best-reply search N-player games
+  - Luckhart Irani multi-player alpha-beta pruning
+  - N-player minimax branching factor phase transition
+  title: Max-N vs Paranoid vs Best-Reply Search
+- deliverable: Win rate curves showing depth advantage saturation or inversion
+  description: 'Test whether a stronger player (deeper search) triggers implicit 3-vs-1
+
+    blocking coalitions. The Bot trait supports heterogeneous matchups directly.
+
+    '
+  experiment:
+  - 3 players at depth D, 1 player at depth 2D
+  - measure win rate curve as function of depth advantage ratio
+  - identify saturation point where strength advantage inverts
+  id: T4_skill_asymmetry
+  priority: P1
+  search_queries:
+  - multi-player game skill asymmetry coalition formation
+  - N-player zero-sum anti-leader balancing emergent behavior
+  - chess-pro advantage in multi-player board games
+  title: Skill Asymmetry and Emergent Anti-Leader Coalitions
+- deliverable: Bot performance with vs without hostile mechanic; hostile inference
+    prototype
+  description: 'The hostile mechanic transforms the game from perfect to imperfect
+
+    information. Non-hostile players must infer identity from play patterns;
+
+    hostile must win covertly.
+
+    '
+  id: T5_hostile_bayesian
+  priority: P2
+  search_queries:
+  - hidden role board game Bayesian game theory
+  - Mafia Werewolf deduction game optimal strategy
+  - imperfect information multi-player game search
+  - opponent modeling deception detection board games
+  sub_questions:
+  - Does paranoid search naturally serve non-hostile players (assume worst case)?
+  - Does max-N naturally serve hostile players (hide among independent maximizers)?
+  - Can hostile inference (tracking blocking/advancing patterns) improve non-hostile
+    performance?
+  title: Hidden Hostile Role — Bayesian Game Overlay
+- deliverable: Tractability assessment; cycle frequency data from tournament runs
+  description: 'Assess whether the pure 4-player game (no hostile) is partially solvable.
+
+    Movement creates cycles unlike placement-only games, complicating
+
+    retrograde analysis.
+
+    '
+  id: T6_tractability
+  priority: P3
+  search_queries:
+  - combinatorial game state space enumeration techniques
+  - retrograde analysis multi-player games
+  - endgame tablebase construction 4-player
+  sub_questions:
+  - tight upper bound on reachable state space
+  - endgame tablebase feasibility for positions with <=K total tokens
+  - cycle frequency in movement phase — is 3-fold repetition draw needed?
+  title: State Space Tractability and Partial Solvability
+risks:
+- description: Game misframed as Qubic — stacking is coverage mechanic, not 3D winning
+  id: R1
+  impact: high
+  likelihood: high
+  mitigation: T1 formally distinguishes the game from Qubic
+- description: Movement creates infinite games via position cycling
+  id: R2
+  impact: medium
+  likelihood: medium
+  mitigation: Add repetition detection; measure cycle frequency empirically
+- description: Evaluation function quality dominates algorithm comparison
+  id: R3
+  impact: high
+  likelihood: medium
+  mitigation: T2 ablation study; test algorithms at multiple heuristic quality levels
+- description: 4-player tournament sample size explosion
+  id: R4
+  impact: medium
+  likelihood: medium
+  mitigation: symmetric + single-deviant matchups only; skip full combinatorial sweep
+title: 4-Player Top-Visible Stacking 3-in-a-Row — Research Strategy

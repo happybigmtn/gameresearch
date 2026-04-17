@@ -1,0 +1,226 @@
+meta:
+  created: '2026-04-17'
+  priority_sub_questions:
+  - id: SQ1
+    label: Game Formalization
+    priority: P0
+  - id: SQ2
+    label: Memory Allocation Strategy
+    priority: P0
+  - id: SQ4
+    label: Gomoku Theory Transfer
+    priority: P1
+  - id: SQ3
+    label: Agent Architecture Design
+    priority: P1
+  - id: SQ5
+    label: Evaluation Methodology
+    priority: P2
+  - id: SQ6
+    label: Forgetting Dynamics
+    priority: P2
+  topic: Blind Omok / Blind Gomoku — memory-bounded imperfect-recall 5-in-a-row
+phases:
+- duration_days: 5
+  goal: Establish formal model and confirm memory-allocation novelty
+  name: Phase 1 — Foundations (SQ1, SQ2)
+  searches:
+  - expected_hits: 20-40
+    filters:
+      year_max: 2026
+      year_min: 1990
+    id: S1
+    query: imperfect recall extensive form game formalization POMDP
+    relevance_criteria: Must address forgotten or decayed information sets, not just
+      hidden actions
+    targets:
+    - google_scholar
+    - semantic_scholar
+    - arxiv
+  - expected_hits: 10-20
+    filters:
+      year_min: 1997
+    id: S2
+    query: absentminded driver problem imperfect recall
+    relevance_criteria: Self-forgetting in sequential decisions; closest known analogue
+    targets:
+    - google_scholar
+    - semantic_scholar
+  - expected_hits: 15-30
+    filters:
+      year_max: 2020
+      year_min: 1985
+    id: S3
+    query: bounded memory repeated games finite automata strategies
+    relevance_criteria: Memory as finite resource in game-theoretic play
+    targets:
+    - google_scholar
+    - semantic_scholar
+    - jstor
+  - expected_hits: 10-25
+    filters:
+      year_min: 2015
+    id: S4
+    query: memory allocation attention mechanism board games
+    relevance_criteria: Hard attention or selective memory in adversarial domains
+    targets:
+    - google_scholar
+    - arxiv
+    - acm_dl
+  - expected_hits: 15-30
+    filters:
+      year_min: 2000
+    id: S5
+    query: POMDP belief state factored representation combinatorial
+    relevance_criteria: Tractable belief-space approximations for large state spaces
+    targets:
+    - arxiv
+    - semantic_scholar
+- duration_days: 5
+  goal: Map existing Gomoku solver results and identify transferable components
+  name: Phase 2 — Gomoku Theory & Agent Design (SQ4, SQ3)
+  searches:
+  - expected_hits: 20-40
+    filters:
+      year_max: 2026
+      year_min: 1990
+    id: S6
+    query: Gomoku threat space search proof number search Allis
+    relevance_criteria: Core Gomoku solving techniques; assess which require stone-ownership
+      certainty
+    targets:
+    - google_scholar
+    - semantic_scholar
+    - dblp
+  - expected_hits: 5-15
+    filters:
+      year_min: 2000
+    id: S7
+    query: Renju opening theory 19x19 Gomoku
+    relevance_criteria: Standard opening sequences to test under memory degradation
+    targets:
+    - google_scholar
+    - renju_net
+    - gomoku_world
+  - expected_hits: 20-40
+    filters:
+      year_max: 2026
+      year_min: 2014
+    id: S8
+    query: neural Turing machine differentiable memory reinforcement learning
+    relevance_criteria: Explicit read/write/forget memory architectures for agents
+    targets:
+    - arxiv
+    - semantic_scholar
+    - neurips_proceedings
+  - expected_hits: 10-25
+    filters:
+      year_min: 2016
+    id: S9
+    query: recurrent neural network partial observability board game
+    relevance_criteria: Learned implicit memory for imperfect-info games (Hanabi,
+      poker analogues)
+    targets:
+    - arxiv
+    - semantic_scholar
+  - expected_hits: 15-30
+    filters:
+      year_min: 2017
+    id: S10
+    query: PPO curriculum learning self-play imperfect information game
+    relevance_criteria: RL training regimes under partial observability and asymmetric
+      info
+    targets:
+    - arxiv
+    - semantic_scholar
+- duration_days: 3
+  goal: Define metrics and investigate phase-transition hypotheses
+  name: Phase 3 — Evaluation & Forgetting (SQ5, SQ6)
+  searches:
+  - expected_hits: 10-20
+    filters:
+      year_min: 2015
+    id: S11
+    query: evaluation metrics imperfect information game agent beyond win rate
+    relevance_criteria: Metrics separating decision quality from information quality
+    targets:
+    - arxiv
+    - semantic_scholar
+    - acm_dl
+  - expected_hits: 5-15
+    filters:
+      year_min: 2000
+    id: S12
+    query: phase transition percolation threshold information loss games
+    relevance_criteria: Sharp performance cliffs as information degrades; analogies
+      to percolation
+    targets:
+    - arxiv
+    - google_scholar
+  - expected_hits: 15-30
+    filters:
+      year_max: 2020
+      year_min: 1965
+    id: S13
+    query: chess memory chunks expertise cognitive science de Groot Chase Simon
+    relevance_criteria: Human memory strategies in board games; chunking as natural
+      memory compression
+    targets:
+    - google_scholar
+    - jstor
+    - psycinfo
+- duration_days: 2
+  goal: Confirm no prior work on color-hidden Gomoku; check adjacent formulations
+  name: Phase 4 — Gap Filling & Novelty Validation
+  searches:
+  - expected_hits: 0-5
+    id: S14
+    query: '"blind gomoku" OR "hidden color" OR "color hidden" gomoku OR omok'
+    relevance_criteria: Direct prior art — if found, must be cited and differentiated
+    targets:
+    - google_scholar
+    - arxiv
+    - dblp
+    - google_web
+  - expected_hits: 5-15
+    filters:
+      year_min: 1980
+    id: S15
+    query: forgetful games bounded recall strategy combinatorial
+    relevance_criteria: Alternate terminology for the same concept in OR/econ theory
+    targets:
+    - google_scholar
+    - semantic_scholar
+    - jstor
+  - expected_hits: 5-20
+    id: S16
+    query: Devil's Plan board game analysis strategy
+    relevance_criteria: Popular analysis of the TV show variant; may reveal community
+      formalizations
+    targets:
+    - google_web
+    - youtube
+    - reddit
+risk_mitigations:
+  belief_state_intractability:
+    action: Prioritize S5 results; look for Monte Carlo belief-state sampling methods
+  no_prior_art_found:
+    action: Broaden S14 to include 'fog of war Go', 'Kriegspiel Gomoku', 'phantom
+      board game'
+  rl_training_failure:
+    action: Expand S8-S9 to include auxiliary reward shaping and pre-training on supervised
+      memory tasks
+verification_protocol:
+  dedup: Merge across search engines by DOI; flag duplicates found under different
+    titles
+  snowball_strategy:
+    backward: Check references of high-relevance hits from S1-S5
+    forward: Use Semantic Scholar 'cited by' for Piccione-Rubinstein 1997, Allis 1994,
+      Graves 2014
+  steps:
+  - 'For each source: confirm DOI or stable URL resolves'
+  - Read abstract + introduction to verify relevance tag
+  - 'Check citation count and venue quality (top-tier: NeurIPS, ICML, AAAI, GEB, Econometrica)'
+  - 'For foundational papers (Allis, Piccione-Rubinstein, Neyman): read in full'
+  - 'For technique papers (NTM, PPO, PNS): read method section + experiments'
+  - Cross-reference bibliographies to find missed sources (snowball forward + backward)

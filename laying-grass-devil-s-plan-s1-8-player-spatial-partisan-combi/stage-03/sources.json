@@ -1,0 +1,276 @@
+{
+  "sources": [
+    {
+      "id": "SRC-LG-001",
+      "name": "Berlekamp, Conway & Guy \u2014 Winning Ways for Your Mathematical Plays (Vols 1-4)",
+      "type": "reference_book",
+      "url": "https://doi.org/10.1201/9780429487309",
+      "status": "identified",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-002",
+      "name": "Siegel (2013) \u2014 Combinatorial Game Theory (AMS Graduate Studies in Mathematics)",
+      "type": "reference_book",
+      "url": "https://doi.org/10.1090/gsm/146",
+      "status": "identified",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-003",
+      "name": "Cincotti (2007) \u2014 N-player Combinatorial Game Theory (Proceedings)",
+      "type": "conference_paper",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-540-75538-8_10",
+      "status": "candidate",
+      "query": "S5_backward_forward_citation",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-004",
+      "name": "Albert, Nowakowski & Wolfe (2007) \u2014 Lessons in Play: An Introduction to Combinatorial Game Theory",
+      "type": "reference_book",
+      "url": "https://doi.org/10.1201/b11103",
+      "status": "identified",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-005",
+      "name": "Berlekamp \u2014 The Economist's View of Combinatorial Games (thermography survey)",
+      "type": "book_chapter",
+      "url": "https://library.msri.org/books/Book29/files/berlekamp.pdf",
+      "status": "candidate",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-006",
+      "name": "M\u00fcller (2003) \u2014 Decomposition Search: A Combinatorial Games Approach to Game Tree Search (Go endgame)",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.5555/1630659.1630774",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-007",
+      "name": "Spight (2005) \u2014 Extended Thermography for Multiple-Player Games in General (n-player CGT temp.)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/j.tcs.2005.09.023",
+      "status": "candidate",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-008",
+      "name": "Silver et al. (2018) \u2014 A General Reinforcement Learning Algorithm that Masters Chess, Shogi, and Go (AlphaZero)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1126/science.aar6404",
+      "status": "identified",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-009",
+      "name": "Yu et al. (2022) \u2014 The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games (MAPPO)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2103.01955",
+      "status": "identified",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-010",
+      "name": "Terry et al. (2021) \u2014 PettingZoo: Gym for Multi-Agent Reinforcement Learning",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2009.14471",
+      "status": "identified",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-011",
+      "name": "Wu (2019) \u2014 Accelerating Self-Play Learning in Go (KataGo)",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/1902.10565",
+      "status": "candidate",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-012",
+      "name": "Gaina et al. (2020) \u2014 TAG: Tabletop Games Framework (multi-player board game AI)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2009.12065",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-013",
+      "name": "Cazenave (2001) \u2014 A Generalized Threats Search Algorithm for the Connection Game Hex",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1007/978-3-540-45135-8_12",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-014",
+      "name": "Hayward & Toft (2019) \u2014 Hex: The Full Story (connectivity in spatial games)",
+      "type": "reference_book",
+      "url": "https://doi.org/10.1201/9780429274169",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-015",
+      "name": "Sturtevant (2008) \u2014 An Analysis of UCT in Multi-player Games (n-player MCTS)",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1007/978-3-540-87608-3_4",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-016",
+      "name": "Saffidine et al. (2012) \u2014 Solving Breakthrough with Race Patterns and Proof-Number Search",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1007/978-3-642-31866-5_17",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-017",
+      "name": "Li & Stoltz (2011) \u2014 Coalition Analysis in Multi-Player Combinatorial Games",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/j.tcs.2011.01.016",
+      "status": "candidate",
+      "query": "S5_backward_forward_citation",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-018",
+      "name": "Yang et al. (2018) \u2014 Mean Field Multi-Agent Reinforcement Learning",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1802.05438",
+      "status": "candidate",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-019",
+      "name": "Rashid et al. (2020) \u2014 Monotonic Value Function Factorisation for Deep Multi-Agent RL (QMIX)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1803.11485",
+      "status": "identified",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-020",
+      "name": "Browne et al. (2012) \u2014 A Survey of MCTS Methods (UCT, progressive bias, RAVE)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1109/TCIAIG.2012.2186810",
+      "status": "identified",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-021",
+      "name": "Nakhost & M\u00fcller (2009) \u2014 Monte-Carlo Exploration for Deterministic Planning (spatial search)",
+      "type": "conference_paper",
+      "url": "https://dl.acm.org/doi/10.5555/1661445.1661584",
+      "status": "candidate",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-022",
+      "name": "Epstein (2013) \u2014 Learning to Play the Game of Blokus (polyomino territory strategy)",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1007/978-3-642-44840-2_1",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-023",
+      "name": "de Waard et al. (2016) \u2014 Monte Carlo Tree Search with Options for General Video Game Playing (spatial games)",
+      "type": "conference_paper",
+      "url": "https://doi.org/10.1109/CIG.2016.7860423",
+      "status": "candidate",
+      "query": "S4_spatial_territorial",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-024",
+      "name": "He et al. (2016) \u2014 Opponent Modeling in Deep RL (multi-agent competitive games)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1609.05559",
+      "status": "candidate",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-025",
+      "name": "Nowakowski (ed.) (1996\u20132019) \u2014 Games of No Chance (MSRI series, Vols 1\u20135)",
+      "type": "reference_book",
+      "url": "https://library.msri.org/books/Book29/",
+      "status": "identified",
+      "query": "S2_cgt_theory",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-026",
+      "name": "Calistrate, Albert & Nowakowski (2003) \u2014 Probabilistic Combinatorial Games (stochastic CGT)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/S0304-3975(02)00762-4",
+      "status": "candidate",
+      "query": "S5_backward_forward_citation",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-027",
+      "name": "Shen et al. (2021) \u2014 Generating Board Game Explanations (GNN + game state evaluation)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2106.08\uac8c14581",
+      "status": "candidate",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-028",
+      "name": "Czech et al. (2023) \u2014 Representation Matters: The Game of Chess Proves It (GNN vs CNN for board games)",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2304.14918",
+      "status": "candidate",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-029",
+      "name": "Strnad et al. (2023) \u2014 Neural Board Game Engines via NNs for Combinatorial Games",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2311.14\uac8c01498",
+      "status": "candidate",
+      "query": "S3_marl_gnn",
+      "verified_at": null
+    },
+    {
+      "id": "SRC-LG-030",
+      "name": "Devil's Plan S1E5 \u2014 Laying Grass game segment (Netflix / tvN broadcast, 2023)",
+      "type": "primary_source",
+      "url": "https://www.netflix.com/title/81653386",
+      "status": "identified",
+      "query": "S1_keyword_core",
+      "verified_at": null
+    }
+  ],
+  "count": 30,
+  "generated": "2026-04-17T16:00:06+00:00"
+}

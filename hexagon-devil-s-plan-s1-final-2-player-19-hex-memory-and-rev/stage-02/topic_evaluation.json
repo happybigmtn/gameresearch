@@ -1,0 +1,7 @@
+{
+  "novelty": 3,
+  "specificity": 4,
+  "feasibility": 7,
+  "overall": 4,
+  "suggestion": "The topic as stated conflates two different games: the research goal describes a query-and-reveal information-gathering game, but the actual Hexagon implementation is a broadcast-study-then-recall buzz-and-declare race. Neither framing is strong for a top venue. The core problem \u2014 perfect memory trivializes a 19-cell board, and bounded memory is an artificial researcher-imposed constraint, not intrinsic to the game rules. Reviewers will ask 'why should I care about this specific TV game?' and the answer needs to generalize. REFINED TOPIC: 'Memory-Bounded Search on Structured Constraint Graphs: How Board Topology Shapes Optimal Memorization Under Recall Limits.' Drop the Hexagon branding. Formalize the general problem: given a constraint graph G (lines/triples), a hidden assignment f: V \u2192 {1..k}, a target sum T, and a memory budget K < |V|, which K vertices should an agent encode during a broadcast observation phase to maximize expected constraint satisfaction queries? Hexagon becomes one instantiation (hex grid, 27 collinear triples). Generalize to arbitrary graphs \u2014 random graphs, grid graphs, Petersen graph \u2014 and show that graph-theoretic centrality measures predict optimal memorization sets. This reframes from 'we studied a TV game' to 'we characterize a novel combinatorial problem class with practical implications for sensor placement, exam design, and bounded-rationality models.' Target: AAAI or CoG main track, not NeurIPS/ICML."
+}

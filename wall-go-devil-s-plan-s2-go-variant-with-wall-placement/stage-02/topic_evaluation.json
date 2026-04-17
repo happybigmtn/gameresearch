@@ -1,0 +1,7 @@
+{
+  "novelty": 4,
+  "specificity": 7,
+  "feasibility": 8,
+  "overall": 5,
+  "suggestion": "The game itself is novel (unstudied, 2024 TV origin), but 'build a bot for game X' is a well-worn template. A top ML venue (NeurIPS/ICML) would need a generalizable contribution beyond a single game. Two refinements that would lift this:\n\n(1) COMPOUND ACTION SPACES AS A CLASS: Frame Wall Go as an instance of 'mandatory multi-phase compound actions' \u2014 games where each turn is an atomic (move, modify-board) pair. Formalize the class, prove branching factor bounds, and show empirically (across Wall Go + a synthetic variant) that factored search outperforms joint enumeration at equivalent node budgets. This generalizes beyond one game.\n\n(2) TERRITORY DYNAMICS UNDER INCREMENTAL BOARD MODIFICATION: Wall Go's board graph changes every turn (walls are permanent edge deletions). Study how standard evaluation functions (region size, frontier) degrade as the game graph evolves, and whether graph-neural-network value functions trained on the evolving adjacency matrix outperform handcrafted heuristics. This connects to the GNN-for-games literature.\n\nFor a workshop paper (CoG, AIIDE, AAAI workshop): the current scope is publishable as-is \u2014 first formal analysis of a novel game with bot benchmarks. For a main conference: needs the generalizable angle from (1) or (2)."
+}

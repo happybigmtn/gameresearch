@@ -1,0 +1,186 @@
+{
+  "sources": [
+    {
+      "id": "src-001",
+      "name": "Piccione & Rubinstein 1997 \u2014 On the Interpretation of Decision Problems with Imperfect Recall",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1006/game.1997.0536",
+      "status": "identified",
+      "query": "imperfect recall extensive form game formalization",
+      "verified_at": null
+    },
+    {
+      "id": "src-002",
+      "name": "Allis 1994 \u2014 Searching for Solutions in Games and Artificial Intelligence (PhD thesis)",
+      "type": "thesis",
+      "url": "https://cris.maastrichtuniversity.nl/en/publications/searching-for-solutions-in-games-and-artificial-intelligence",
+      "status": "identified",
+      "query": "Gomoku threat space search proof number search Allis",
+      "verified_at": null
+    },
+    {
+      "id": "src-003",
+      "name": "Neyman 1985 \u2014 Bounded Complexity Justifies Cooperation in the Finitely Repeated Prisoners' Dilemma",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/0165-1765(85)90042-7",
+      "status": "identified",
+      "query": "bounded memory repeated games finite automata strategies",
+      "verified_at": null
+    },
+    {
+      "id": "src-004",
+      "name": "Kalai 1990 \u2014 Bounded Rationality and Strategic Complexity in Repeated Games",
+      "type": "book_chapter",
+      "url": "https://doi.org/10.1007/978-1-4612-3460-9_7",
+      "status": "identified",
+      "query": "bounded memory repeated games finite automata strategies",
+      "verified_at": null
+    },
+    {
+      "id": "src-005",
+      "name": "Kaneko & Kline 2008 \u2014 Inductive Game Theory and the Nature of Extensive Form Games",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/j.geb.2007.05.001",
+      "status": "identified",
+      "query": "imperfect recall extensive form game formalization",
+      "verified_at": null
+    },
+    {
+      "id": "src-006",
+      "name": "Kuhn 1953 \u2014 Extensive Games and the Problem of Information",
+      "type": "book_chapter",
+      "url": "https://doi.org/10.1515/9781400881970-012",
+      "status": "identified",
+      "query": "imperfect recall extensive form game formalization",
+      "verified_at": null
+    },
+    {
+      "id": "src-007",
+      "name": "Graves et al. 2014 \u2014 Neural Turing Machines",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/1410.5401",
+      "status": "identified",
+      "query": "neural Turing machine differentiable memory reinforcement learning",
+      "verified_at": null
+    },
+    {
+      "id": "src-008",
+      "name": "Graves et al. 2016 \u2014 Hybrid Computing Using a Neural Network with Dynamic External Memory",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1038/nature20101",
+      "status": "identified",
+      "query": "neural Turing machine differentiable memory reinforcement learning",
+      "verified_at": null
+    },
+    {
+      "id": "src-009",
+      "name": "de Groot 1965 \u2014 Thought and Choice in Chess",
+      "type": "book",
+      "url": "https://doi.org/10.1515/9783110800647",
+      "status": "identified",
+      "query": "chess memory chunks expertise cognitive science de Groot",
+      "verified_at": null
+    },
+    {
+      "id": "src-010",
+      "name": "Chase & Simon 1973 \u2014 Perception in Chess",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/0010-0285(73)90004-2",
+      "status": "identified",
+      "query": "chess memory chunks expertise cognitive science Chase Simon",
+      "verified_at": null
+    },
+    {
+      "id": "src-011",
+      "name": "Foerster et al. 2019 \u2014 Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning (Hanabi)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/1811.01458",
+      "status": "identified",
+      "query": "recurrent neural network partial observability board game",
+      "verified_at": null
+    },
+    {
+      "id": "src-012",
+      "name": "Hu et al. 2020 \u2014 Other-Play for Zero-Shot Coordination (Hanabi)",
+      "type": "conference_paper",
+      "url": "https://arxiv.org/abs/2003.02979",
+      "status": "identified",
+      "query": "PPO curriculum learning self-play imperfect information game",
+      "verified_at": null
+    },
+    {
+      "id": "src-013",
+      "name": "Nau 1982 \u2014 An Investigation of the Causes of Pathology in Games",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/0004-3702(82)90017-2",
+      "status": "identified",
+      "query": "evaluation metrics imperfect information game agent beyond win rate",
+      "verified_at": null
+    },
+    {
+      "id": "src-014",
+      "name": "Kaelbling et al. 1998 \u2014 Planning and Acting in Partially Observable Stochastic Domains",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1016/S0004-3702(98)00023-X",
+      "status": "identified",
+      "query": "POMDP belief state factored representation combinatorial",
+      "verified_at": null
+    },
+    {
+      "id": "src-015",
+      "name": "Silver & Veness 2010 \u2014 Monte-Carlo Planning in Large POMDPs",
+      "type": "conference_paper",
+      "url": "https://papers.nips.cc/paper/2010/hash/edfbe1afcf9246bb0d40eb4d8027d90f-Abstract.html",
+      "status": "identified",
+      "query": "POMDP belief state factored representation combinatorial",
+      "verified_at": null
+    },
+    {
+      "id": "src-016",
+      "name": "Schulman et al. 2017 \u2014 Proximal Policy Optimization Algorithms",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/1707.06347",
+      "status": "identified",
+      "query": "PPO curriculum learning self-play imperfect information game",
+      "verified_at": null
+    },
+    {
+      "id": "src-017",
+      "name": "Ji\u0159\u00ed et al. 2017 \u2014 DeepStack: Expert-Level Artificial Intelligence in Heads-Up No-Limit Poker",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1126/science.aam6960",
+      "status": "identified",
+      "query": "recurrent neural network partial observability board game",
+      "verified_at": null
+    },
+    {
+      "id": "src-018",
+      "name": "Brown & Sandholm 2019 \u2014 Superhuman AI for Multiplayer Poker (Pluribus)",
+      "type": "journal_article",
+      "url": "https://doi.org/10.1126/science.aay2400",
+      "status": "identified",
+      "query": "recurrent neural network partial observability board game",
+      "verified_at": null
+    },
+    {
+      "id": "src-019",
+      "name": "RenjuNet \u2014 Renju and Gomoku Opening Theory Database",
+      "type": "web_database",
+      "url": "https://www.renju.net/",
+      "status": "identified",
+      "query": "Renju opening theory 19x19 Gomoku",
+      "verified_at": null
+    },
+    {
+      "id": "src-020",
+      "name": "Lambert et al. 2022 \u2014 The Challenges of Exploration for Offline Reinforcement Learning",
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2201.11861",
+      "status": "identified",
+      "query": "PPO curriculum learning self-play imperfect information game",
+      "verified_at": null
+    }
+  ],
+  "count": 20,
+  "generated": "2026-04-17T16:12:26+00:00"
+}
