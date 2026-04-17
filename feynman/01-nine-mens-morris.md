@@ -169,10 +169,14 @@ have more wall-clock to burn.
 Each step is more expensive to compute but meaningfully stronger.
 What's still on the table, in order of what we'd try next:
 
-- **Move ordering.** Alpha-beta prunes more aggressively if you search
-  the likely-best moves first. The greedy score itself is a good
-  heuristic for ordering. Adding this should let depth 3 run in the
-  time depth 2 takes now.
+- **Move ordering.** (**Landed — benchmark pending.**) Alpha-beta
+  prunes more aggressively if you search the likely-best moves
+  first. The greedy mill-differential score is a good heuristic for
+  ordering; we now pre-sort candidate moves by
+  `(own_mills - opp_mills) × 10 + (own_stones - opp_stones)` before
+  recursing. The 7 unit tests still pass; the depth-2 benchmark is
+  queued to confirm no regression, and depth-3-under-move-ordering
+  is the first look at the new time budget.
 - **Quiescence search.** When the leaf position has a pending capture,
   extend the search past the nominal depth until no mill-closing move
   is available. This stops us from stopping the search in the middle
