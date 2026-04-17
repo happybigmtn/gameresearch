@@ -12,6 +12,7 @@ chapter stands alone.*
 | 1 | [01-nine-mens-morris.md](01-nine-mens-morris.md) | Rules of Nine Men's Morris. Random → Greedy → Minimax. Why depth-2 minimax gets 0.940 vs random with zero losses. |
 | 2 | [02-bagchal.md](02-bagchal.md) | Rules of Bagchal (Nepalese tiger-vs-goat, S2 mirror variant). Random collapses to 0.455; Greedy hits 1.000. The baseline-too-weak pathology, and why self-play is the new benchmark. |
 | 3 | [03-big-small.md](03-big-small.md) | Rules of Big Small (2-player deterministic card counting). Random self-play produces 100% draws. The baseline-too-quiet pathology, and the general lesson about baselines that discriminate. |
+| 4 | [04-equation-pyramid.md](04-equation-pyramid.md) | Rules of Equation Pyramid (2-player arithmetic race, 10 rounds, pick 3 cells to hit a target). Random vs. random hangs the harness — a structural benchmark limitation and what to do about it. |
 
 ## Living document
 

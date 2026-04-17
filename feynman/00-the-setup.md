@@ -172,6 +172,7 @@ Each row is one benchmark, reproducible from the `--program` /
 | Bagchal   | Greedy    | Random | 200 | 200 / 0 / 0    | 1.000 |
 | Bagchal   | Greedy    | Greedy | 200 | 108 / 92 / 0   | 0.540 |
 | Big Small | Random    | Random | 200 |   0 / 0 / 200  | 0.000 |
+| Equation Pyramid | Random | Random | — | (does not terminate) | — |
 
 Per-game chapters give the rules and the context that turn each row
 into a story.
@@ -266,8 +267,11 @@ progress curve is:
   using `candle` or `tch` for Rust-native tensor work).
 
 The per-game chapters update as each game lands. For now, Nine Men's
-Morris, Bagchal, and Big Small are the worked-through examples, and
-they together establish the template every other game follows.
+Morris, Bagchal, Big Small, and Equation Pyramid are the worked-
+through examples, and they together establish the template every
+other game follows — plus the failure modes to expect (baseline too
+weak in Bagchal, baseline too quiet in Big Small, benchmark-ceiling
+limitation in Equation Pyramid).
 
 ---
 
