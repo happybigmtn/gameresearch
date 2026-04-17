@@ -172,8 +172,8 @@ Each row is one benchmark, reproducible from the `--program` /
 | Bagchal   | Greedy    | Random | 200 | 200 / 0 / 0    | 1.000 |
 | Bagchal   | Greedy    | Greedy | 200 | 108 / 92 / 0   | 0.540 |
 | Big Small | Random    | Random | 200 |   0 / 0 / 200  | 0.000 |
-| Equation Pyramid | Random | Random | — | (does not terminate) | — |
-| Equation Pyramid | Solver | Random | — | (harness tick-counting issue) | — |
+| Equation Pyramid | Random | Random | — | (harness + plugin tick cost) | — |
+| Equation Pyramid | Solver | Random | — | (plugin ticks every cycle — stall detection can't disambiguate) | — |
 
 Per-game chapters give the rules and the context that turn each row
 into a story.

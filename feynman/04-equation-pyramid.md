@@ -134,7 +134,7 @@ every round — the plugin generates rounds that always have at
 least one). The expected win rate is therefore essentially 1.0,
 subject only to the harness's seat-polling order.
 
-### 3.1 The harness-vs-plugin tick-counting gotcha
+### 3.1 The harness-vs-plugin tick-counting gotcha (and a partial fix)
 
 We added an optional `max_ticks_per_match` field to `program.md`
 so Equation Pyramid can get a higher ceiling than the default 2000.
@@ -151,19 +151,42 @@ budget advancing between states. Our harness counts *driver ticks*
 which means Equation Pyramid pays a multiplier the other games
 don't.
 
-Two fixes, neither landed yet:
+Two fixes were considered:
 
 1. **Per-game benchmark ceilings tuned to plugin timing models.**
-   Raise Equation Pyramid's to 50,000+, accept the long runtime,
-   confirm the solver hits ~1.0 win-rate.
+   Raise Equation Pyramid's `max_ticks_per_match` to 50,000+,
+   accept the long runtime, confirm the solver hits ~1.0 win-rate.
 2. **Progress-based stall detection.** Track state hashes between
    ticks; if the hash hasn't changed in N ticks, terminate. This
    decouples harness termination from plugin timing model.
 
+Both landed. The first is the `max_ticks_per_match` field on
+`program.md`, propagated into `BenchmarkConfig`. The second is a
+hash-based counter that resets whenever the `SessionState` JSON
+changes.
+
+The progress-based fix works beautifully for the other three games
+(NMM regressed at 188/0/12 → 0.940, identical to trunk). It does
+*not* fix Equation Pyramid, because the plugin's `SessionState`
+includes a `current_cycle` counter that monotonically advances
+*every* driver tick. So from the harness's point of view, every
+tick is "progress" — the hash is always different — and the stall
+counter never fires.
+
+The real fix for Equation Pyramid is plugin-level: either expose
+a per-logical-turn progress signal the harness can count, or split
+the `SessionState` into a "durable" part (round number, phase
+enum, chip balances) and a "transient" part (cycle counter, buzz
+timers) where only the durable part is hashed for stall detection.
+Either change touches the `GamePlugin` trait surface and is a
+separate commit from the generic harness improvement. The harness
+gain is banked; Equation Pyramid remains unmeasured.
+
 Meanwhile, the SolverBot code is in, its logic is correct, and its
 unit tests pass. The absence of a benchmark number is itself a
-finding: the harness needs per-game termination tuning before
-certain classes of games can be evaluated.
+finding: **one generic harness improvement doesn't equal one fix
+per game**, because each game's plugin encodes its own timing
+model and the harness has to be robust across all of them.
 
 ---
 
